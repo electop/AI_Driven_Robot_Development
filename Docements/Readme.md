@@ -1,19 +1,21 @@
-## AxiDraw User Guide
+## RoboPaint for AxiDraw
+### cncserver API (RESTful)
+ . Document: https://github.com/techninja/cncserver/blob/master/API.md
+
+### RoboPaint remote print mode API (RESTful)
+ . Document: https://github.com/evil-mad/robopaint-mode-remote/blob/master/API.md
+ 
+### Scratch API (only Get)
+ . Document: https://github.com/techninja/cncserver/blob/master/scratch/SCRATCH.API.md
+
+## Information
+### AxiDraw User Guide
  . Link: https://cdn.evilmadscientist.com/wiki/axidraw/software/AxiDraw_V37r1.pdf
 
-## EBB(EiBotBoard)
+### EBB(EiBotBoard)
  . Description : http://www.schmalzhaus.com/EBB/
  . Code: https://github.com/evil-mad/EggBot
 
-## cncserver API (RESTful)
- . Document: https://github.com/techninja/cncserver/blob/master/API.md
-
-## RoboPaint remote print mode API (RESTful)
- . Document: https://github.com/evil-mad/robopaint-mode-remote/blob/master/API.md
- 
-## Scratch API (only Get)
- . Document: https://github.com/techninja/cncserver/blob/master/scratch/SCRATCH.API.md
- 
 ## SW Installation (For Linux)
 <pre>
 The AxiDraw extension for Inkscape has been developed and tested extensively under Ubuntu. We expect it to work equally well in most Ubuntu derivatives and other distributions where Inkscape is known to work. However, we do not have the capability to test every distribution.

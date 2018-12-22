@@ -1,4 +1,5 @@
 구입처|구매일| 비용 |내역
+---	|	---	|	---	|	---
 Amazon|2018-12-17| 51,934 |2 of LE Power Adapter, 2A, AC 100-240V to DC 12V Transformer, 24W Switching Power Supply, US Plug Power Converter for LED Strip Light and More, Pack of 2
 미스터조각기|2018-12-17| 100,200 |ANET A8 NEMA17 ... 외 1개
 삼디몰|2018-12-17| 14,500 |엔드스탑 스위치(가로형)-[리미트스위치]

@@ -1,3 +1,6 @@
+지출 : 190,080
+잔여예산 : 409,920
+
 구입처|구매일| 비용 |내역
 ---	|	---	|	---	|	---
 Amazon|2018-12-17| 51,934 |2 of LE Power Adapter, 2A, AC 100-240V to DC 12V Transformer, 24W Switching Power Supply, US Plug Power Converter for LED Strip Light and More, Pack of 2

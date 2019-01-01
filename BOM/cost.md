@@ -1,8 +1,9 @@
-### 지출 : 258,914
-### 잔여예산 : 341,086
+### 지출 : 358,238
+### 잔여예산 : 241,762
 
 구입처|구매일| 비용 |내역
 ---	|	---	|	---	|	---
+Amazon|2019-1-2| 99,324 |304 Stainless Steel Screws Nuts and Washers 1200PCS, Sutemribor M2 M3 M4 Hex Socket Head Cap Bolts Screws Nuts Washers Assortment Kit with Three Hex Wrenches
 서브무역|2018-12-30| 16,900 |실리콘 구리스 뿌리는 그리스 스프레이 (3M 실리콘 루브리컨트)
 Amazon|2018-12-17| 51,934 |2 of LE Power Adapter, 2A, AC 100-240V to DC 12V Transformer, 24W Switching Power Supply, US Plug Power Converter for LED Strip Light and More, Pack of 2
 미스터조각기|2018-12-17| 100,200 |ANET A8 NEMA17 ... 외 1개

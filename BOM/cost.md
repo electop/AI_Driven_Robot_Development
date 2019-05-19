@@ -1,13 +1,10 @@
-### 지출 : 358,238
-### 잔여예산 : 241,762
+### 지출 : 479,950
+### 잔여예산 : 120,050
 
 구입처|구매일| 비용 |내역
 ---	|	---	|	---	|	---
 AliExpree|2019-5-20| 5,162 |2pcs chrome steel Cylindrical roller Dowel Locating Pin M3 M4 M5 3mm / 4mm / 5mm * 50 55 60 70 80 mm Smooth Rods Linear Shaft
-베어링가계|2019-5-20| 84,600 |열처리 연마봉 4Ø~25Ø ( 도금봉 절단 가능 볼부쉬 샤프트 베어링 3D프린트 부품 )
-두께 8mm 연마봉을 350mm씩 6개 제작해주세요.
-열처리 연마봉 4Ø~25Ø ( 도금봉 절단 가능 볼부쉬 샤프트 베어링 3D프린트 부품 )
-두께 8mm 연마봉을 450mm씩 6개 제작해주세요.
+베어링가계|2019-5-20| 84,600 |열처리 연마봉 M8x350mm(6), M8x450mm(6)
 내써팝|2019-5-17| 31,950 |타이밍 풀리 GT2 기어 1... 외 3개
 Amazon|2019-1-2| 99,324 |304 Stainless Steel Screws Nuts and Washers 1200PCS, Sutemribor M2 M3 M4 Hex Socket Head Cap Bolts Screws Nuts Washers Assortment Kit with Three Hex Wrenches
 서브무역|2018-12-30| 16,900 |실리콘 구리스 뿌리는 그리스 스프레이 (3M 실리콘 루브리컨트)

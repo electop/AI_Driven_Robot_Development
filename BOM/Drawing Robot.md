@@ -1,8 +1,8 @@
 No.	|	Check	|	Category	|	Name	|	Num	|	Unit Price	|	 Price 	|	Description	|	Seller	|	Link fo shopping
 ---	|	---	|	---	|	---	|	---	|	---	|	---	|	---	|	---	|	---
 1	|	O	|	H/W	|	Nema 17 Stepper Motors	|	2	|	 7,700 	|	 15,400 	|		|	미스터조각기	|	https://smartstore.naver.com/mrcnc/products/2097373008
-2	|	X	|	H/W	|	 Linear bearing rod M8 x 450mm	|	2	|	 7,650 	|	 15,300 	|	X Axis	|	베어링가게	|	https://smartstore.naver.com/allbearing/products/403940030
-3	|	X	|	H/W	|	Linear bearing rod M8 x 350mm	|	2	|	 5,950 	|	 11,900 	|	Y axis	|		|	
+2	|	O	|	H/W	|	 Linear bearing rod M8 x 450mm	|	2	|	 7,650 	|	 15,300 	|	X Axis	|	베어링가게	|	https://smartstore.naver.com/allbearing/products/403940030
+3	|	O	|	H/W	|	Linear bearing rod M8 x 350mm	|	2	|	 5,950 	|	 11,900 	|	Y axis	|		|	
 4	|	X	|	H/W	|	Linear rod M3 x 75mm	|	2	|		|		|	Z Axis (You can find them in any old CDROM or purchase on EBay)	|		|	
 5	|	O	|	H/W	|	M8 x 470mm threaded rod	|	1	|	 4,500 	|	 4,500 	|		|	내써팝	|	https://smartstore.naver.com/nasspop/products/3559839665
 6	|	O	|	H/W	|	LM8UU linear bearings or printed bearings	|	8	|	 600 	|	 4,800 	|		|		|	https://smartstore.naver.com/nasspop/products/549934645

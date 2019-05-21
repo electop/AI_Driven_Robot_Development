@@ -13,7 +13,7 @@ https://www.thingiverse.com/thing:3624736<br>
 https://www.thingiverse.com/thing:2587684<br>
 <img src="https://cdn.thingiverse.com/renders/9f/e1/e8/41/3c/1ea54ba4b695a37cefbbd15caf575798_preview_featured.jpg" alt="Drawing Robot - Arduino Uno + CNC Shield + GRBL" height="302" width="403"><br>
 
-# Summary
+# Summary for Drawing Robot
 This drawing robot is similar to the commercially available AxiDraw. It is powered by an Arduino Uno controller, uses a CNC Shield, and GRBL firmware. The approximate cost to build this drawing robot is $100.
 
 Assembly documentation can be found in the Files section and at the following link. Thanks to Jonathan K for supplying this documentation.<br>

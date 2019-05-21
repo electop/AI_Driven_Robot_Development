@@ -1,9 +1,9 @@
-### 지출 : 479,950
-### 잔여예산 : 120,050
+### 지출 : 479,977
+### 잔여예산 : 120,023
 
 구입처|구매일| 비용 |내역
 ---	|	---	|	---	|	---
-AliExpress|2019-5-20| 5,162 |2pcs chrome steel Cylindrical roller Dowel Locating Pin M3 M4 M5 3mm / 4mm / 5mm * 50 55 60 70 80 mm Smooth Rods Linear Shaft
+AliExpress|2019-5-20| 5,189 |2pcs chrome steel Cylindrical roller Dowel Locating Pin M3 M4 M5 3mm / 4mm / 5mm * 50 55 60 70 80 mm Smooth Rods Linear Shaft
 베어링가계|2019-5-20| 84,600 |열처리 연마봉 M8x350mm(6), M8x450mm(6)
 내써팝|2019-5-17| 31,950 |타이밍 풀리 GT2 기어 1... 외 3개
 Amazon|2019-1-2| 99,324 |304 Stainless Steel Screws Nuts and Washers 1200PCS, Sutemribor M2 M3 M4 Hex Socket Head Cap Bolts Screws Nuts Washers Assortment Kit with Three Hex Wrenches

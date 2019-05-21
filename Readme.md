@@ -1,6 +1,7 @@
 # AI Driven Robot Development
 https://www.thingiverse.com/thing:2349232<br>
 https://www.youtube.com/watch?time_continue=3&v=vTD7USqdXJI
+<img src="https://cdn.thingiverse.com/renders/0c/90/3f/fb/04/45ea13cb80020e78b923b75b8021c750_preview_featured.JPG" alt="Drawing Robot - Arduino Uno + CNC Shield + GRBL" height="302" width="403">
 
 # Summary
 This drawing robot is similar to the commercially available AxiDraw. It is powered by an Arduino Uno controller, uses a CNC Shield, and GRBL firmware. The approximate cost to build this drawing robot is $100.

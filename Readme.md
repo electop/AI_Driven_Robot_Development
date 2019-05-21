@@ -5,7 +5,7 @@ https://www.youtube.com/watch?time_continue=3&v=vTD7USqdXJI
 # Summary
 This drawing robot is similar to the commercially available AxiDraw. It is powered by an Arduino Uno controller, uses a CNC Shield, and GRBL firmware. The approximate cost to build this drawing robot is $100.
 
-Assembly documentation can be found in the Files section and at the following link. Thanks to Jonathan K for supplying this documentation.
+Assembly documentation can be found in the Files section and at the following link. Thanks to Jonathan K for supplying this documentation.<br>
 https://docs.google.com/presentation/d/1GihJuR7yHVtUPYCp9GVDHLsJUhT2RwPrkIopzYrXYhw/edit?usp=sharing
 
 There's also a document which explains how to install Inkscape, the Inkscape MI extension, and the Universal G-Code Sender. It guides you through three example projects and can be found in the Files section of this Thing. Use these instructions instead of the last three pages of the assembly document which describe a different G-Code extension.
@@ -24,7 +24,7 @@ When setting up your hardware you must do the following:
 
 I have posted all the parts needed from the two source designs. There are only 15 parts to print and none of them are very large. I added a stronger pen slider and a controller enclosure. There is an even better pen holder in the remix section. I also clarified the names that were in Spanish. I have posted all needed files so that there isn't confusion regarding which parts are needed from each of the original designs.
 
-My drawing robot is modified version of this one
+My drawing robot is modified version of this one<br>
 https://www.thingiverse.com/thing:2058866
 
 Place this version of GRBL Firmware for the Arduino on your computer. You must use this version of GRBL. Other GRBL versions do not have the control code for the Z axis servo.
@@ -32,21 +32,21 @@ https://github.com/robottini/grbl-servo
 
 Replace the default config.h file in GRBL with the one supplied in the "Thing Files" section
 
-Upload GRBL to your Arduino Uno using these instructions
+Upload GRBL to your Arduino Uno using these instructions<br>
 https://github.com/grbl/grbl/wiki/Compiling-Grbl (Ignore references to GRBL V1.1)
 You must copy the config.h which I supply here to the directory where GRBL resides and then do the upload. The new config.h will be used for the compile of the GRBL code.
 
-Inkscape Drawing Software
+Inkscape Drawing Software<br>
 https://inkscape.org/en/
 
-Universal G-Code Sender
-https://winder.github.io/ugs_website/download/
+Universal G-Code Sender<br>
+https://winder.github.io/ugs_website/download/<br>
 
-Use the Inkscape MI Extension to generate G Code:
-http://www.mediafire.com/file/ae0wquqornzc3o2/MI+Inkscape+Extension.zip
+Use the Inkscape MI Extension to generate G Code:<br>
+http://www.mediafire.com/file/ae0wquqornzc3o2/MI+Inkscape+Extension.zip<br>
 There is a tutorial in the Files section on how to use the software.
 
-HARDWARE NEEDED
+HARDWARE NEEDED<br>
 2x Nema 17 Stepper Motors
 2x Linear bearing rod M8 x 450mm, X Axis
 2x Linear bearing rod M8 x 350mm, Y axis

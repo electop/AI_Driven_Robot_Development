@@ -33,7 +33,7 @@ https://github.com/robottini/grbl-servo
 Replace the default config.h file in GRBL with the one supplied in the "Thing Files" section
 
 Upload GRBL to your Arduino Uno using these instructions<br>
-https://github.com/grbl/grbl/wiki/Compiling-Grbl (Ignore references to GRBL V1.1)
+https://github.com/grbl/grbl/wiki/Compiling-Grbl (Ignore references to GRBL V1.1)<br>
 You must copy the config.h which I supply here to the directory where GRBL resides and then do the upload. The new config.h will be used for the compile of the GRBL code.
 
 Inkscape Drawing Software<br>
@@ -46,7 +46,7 @@ Use the Inkscape MI Extension to generate G Code:<br>
 http://www.mediafire.com/file/ae0wquqornzc3o2/MI+Inkscape+Extension.zip<br>
 There is a tutorial in the Files section on how to use the software.
 
-HARDWARE NEEDED<br>
+##HARDWARE NEEDED<br>
 2x Nema 17 Stepper Motors<br>
 2x Linear bearing rod M8 x 450mm, X Axis<br>
 2x Linear bearing rod M8 x 350mm, Y axis<br>
@@ -62,14 +62,14 @@ HARDWARE NEEDED<br>
 misc M3 and M4 screws and nuts<br>
 M8 nuts
 
-ELECTRONICS<br>
+##ELECTRONICS<br>
 Arduino Uno<br>
 CNC Shield<br>
 12V 2A Wall Transformer<br>
 https://www.amazon.com/Adapter-100-240V-Transformers-Switching-Adaptor/dp/B019Q3U72M<br>
 2-4 limit switches ( optional. I suggest you leave them off and add later if you want them)
 
-SOFTWARE<br>
+##SOFTWARE<br>
 Inkscape which is the graphics design software (draw or import graphics)<br>
 Inkscape MI GRBL Extension (convert graphics to G-Code)<br>
 Universal G Code Sender (sends the G-Code to the robot causing drawing motion)<br>

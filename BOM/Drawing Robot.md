@@ -16,10 +16,14 @@ No.	|	Check	|	Category	|	Name	|	Num	|	Unit Price	|	 Price 	|	Description	|	Selle
 14	|	O	|	H/W	|	Button/Philips head M3 x 10mm screws and nuts	|	8	|	30+10	|	 320 	|		|		|	
 15	|	O	|	H/W	|	Cap head M3 x 15mm screws	|	1	|		|		|		|		|	
 16	|	O	|	H/W	|	Flat head M3 x 15mm screws	|	3	|		|		|		|		|	
-17	|	O	|	H/W	|	M8 nuts	|	50	|	30	|	 ,1500 	|		|		|	https://smartstore.naver.com/0109/products/2233911416
+17	|	O	|	H/W	|	M8 nuts	|	50	|	30	|	 1,500 	|		|		|	https://smartstore.naver.com/0109/products/2233911416
 18	|	O	|	Electronics	|	Arduino Uno	|	1	|	-	|	 - 	|		|		|	
 19	|	O	|	Electronics	|	CNC Shield	|	1	|	 18,000 	|	 18,000 	|	CNC Shield + A4988 Driver x 4 + CH340G(Arduino Uno Compatible)	|	미스터조각기	|	https://smartstore.naver.com/mrcnc/products/760201081
 20	|	O	|	Electronics	|	12V 2A Wall Transformer	|	1	|	$10.99 	|	 12,436 	|		|	amazon	|	https://www.amazon.com/Adapter-100-240V-Transformers-Switching-Adaptor/dp/B019Q3U72M
 21	|	O	|	Electronics	|	2-4 limit switches	|	-	|		|		|	optional. I suggest you leave them off and add later if you want them	|		|	
-22	|	O	|	H/W	|	624zz bearings with the idler pulley	|	-	|		|		|		|		|	https://www.thingiverse.com/thing:2424284
+22	|	O	|	H/W	|	624zz bearings with the idler pulley	|	-	|		|		|		|		|	https://www.thingiverse.com/thing:2424284	
+23	|	O	|	H/W	|	M8 와셔	|	4	|	70	|	280	|		|	영원툴	|	https://www.thingiverse.com/thing:2424284	
+24	|	O	|	H/W	|	M8 육각너트 스텐 서스	|	4	|	40	|	160	|		|	영원툴	|	https://smartstore.naver.com/0109/products/2233911416	
+
+
 

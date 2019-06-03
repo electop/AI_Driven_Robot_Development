@@ -21,3 +21,5 @@ No.	|	Check	|	Category	|	Name	|	Num	|	Unit Price	|	 Price 	|	Description	|	Selle
 19	|	O	|	Electronics	|	CNC Shield	|	1	|	 18,000 	|	 18,000 	|	CNC Shield + A4988 Driver x 4 + CH340G(Arduino Uno Compatible)	|	미스터조각기	|	https://smartstore.naver.com/mrcnc/products/760201081
 20	|	O	|	Electronics	|	12V 2A Wall Transformer	|	1	|	$10.99 	|	 12,436 	|		|	amazon	|	https://www.amazon.com/Adapter-100-240V-Transformers-Switching-Adaptor/dp/B019Q3U72M
 21	|	O	|	Electronics	|	2-4 limit switches	|	-	|		|		|	optional. I suggest you leave them off and add later if you want them	|		|	
+22	|	O	|	H/W	|	624zz bearings with the idler pulley	|	-	|		|		|		|		|	https://www.thingiverse.com/thing:2424284
+

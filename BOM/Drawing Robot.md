@@ -22,7 +22,7 @@ No.	|	Check	|	Category	|	Name	|	Num	|	Unit Price	|	 Price 	|	Description	|	Selle
 20	|	O	|	Electronics	|	12V 2A Wall Transformer	|	1	|	$10.99 	|	 12,436 	|		|	amazon	|	https://www.amazon.com/Adapter-100-240V-Transformers-Switching-Adaptor/dp/B019Q3U72M
 21	|	O	|	Electronics	|	2-4 limit switches	|	-	|		|		|	optional. I suggest you leave them off and add later if you want them	|		|	
 22	|	O	|	H/W	|	624zz bearings with the idler pulley	|	-	|		|		|		|		|	https://www.thingiverse.com/thing:2424284	
-23	|	O	|	H/W	|	M8 와셔	|	4	|	70	|	280	|		|	영원툴	|	https://www.thingiverse.com/thing:2424284	
+23	|	O	|	H/W	|	M8 와셔	|	4	|	70	|	280	|		|	영원툴	|	https://smartstore.naver.com/0109/products/2262082335	
 24	|	O	|	H/W	|	M8 육각너트 스텐 서스	|	4	|	40	|	160	|		|	영원툴	|	https://smartstore.naver.com/0109/products/2233911416	
 
 

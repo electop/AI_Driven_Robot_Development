@@ -3,7 +3,7 @@
  - <a href="https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5p.exe">rufs portable Download(@Windows)</a><br>
   . <a href="https://m.blog.naver.com/PostView.nhn?blogId=seoulworkshop&logNo=221262339483&proxyReferer=https%3A%2F%2Fwww.google.com%2F">How to make a OctoPrint image on SD card, using rufs tool</a>
 # 2. Installation
-  ## Your Raspberry Pi(@OctoPrint)
+  ### Your Raspberry Pi(@OctoPrint)
   - ID : **pi**, Password : **raspberry**<br>
   - $cd boot > $nano pctopi-wpa-supplicant.txt<br>
   - ...<br>
@@ -17,7 +17,7 @@
   - $sudo raspi-config > Choice "5. Interfacing Options" > Choice "P2 SSH" > Choice "Yes"<br>
   - $passwd pi > Changement the password of your OctoPrint device<br>
   - $sudo reboot
-  ## Your PC(@Ubuntu)
+  ### Your PC(@Ubuntu)
   - $sudo apt-get install putty<br>
   - $putty > Host Name: "YOUR_OCTOPRINT_DEVICE_IP" > Saved Sessions: "OctoPrint" > Click the "Save" button > Click the "Open" button
 # 3. Making case for devices of OctoPrint

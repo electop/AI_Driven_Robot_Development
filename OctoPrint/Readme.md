@@ -19,7 +19,7 @@
   - $sudo reboot
   ## Your PC(@Ubuntu)
   - $sudo apt-get install putty<br>
-  - $putty > Host Name: "YOUR_OCTOPRINT_DEVICE_IP" > Saved Sessions: "OctoPrint" > Click "Save" button
+  - $putty > Host Name: "YOUR_OCTOPRINT_DEVICE_IP" > Saved Sessions: "OctoPrint" > Click the "Save" button > Click the "Open" button
 # 3. Making case for devices of OctoPrint
  - <a href="https://www.thingiverse.com/thing:2797774/remixes">CR-10 RaspberryPi Ethernet Camera Mount Kit</a>
 # 4. Port Fowarding

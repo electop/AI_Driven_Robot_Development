@@ -2,6 +2,7 @@
  - <a href="https://octopi.octoprint.org/latest">1. OctoPrint Download</a><br>
  - <a href="https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5p.exe">2. rufs portable Download</a><br>
   . <a href="https://m.blog.naver.com/PostView.nhn?blogId=seoulworkshop&logNo=221262339483&proxyReferer=https%3A%2F%2Fwww.google.com%2F">How to make a OctoPrint image on SD card, using rufs tool</a><br>
+# Installation
  ## Your Raspberry Pi(@OctoPrint)
   - ID : **pi**, Password : **raspberry**<br>
   - $cd boot > $nano pctopi-wpa-supplicant.txt<br>

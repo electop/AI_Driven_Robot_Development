@@ -15,6 +15,7 @@
   - ^X > Y<br>
   - $ifconfig > Checking the IP address of your OctoPrint device: (e.g.)192.168.0.x<br>
   - $sudo raspi-config > Choice "5. Interfacing Options" > Choice "P2 SSH" > Choice "Yes"<br>
+  - $passwd pi > Changement the password of your OctoPrint device<br>
   - $sudo reboot<br>
   ## Your PC(@Ubuntu)
   - $sudo apt-get install putty<br>

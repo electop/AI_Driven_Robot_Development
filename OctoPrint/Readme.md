@@ -23,7 +23,7 @@
 # 3. Making case for devices of OctoPrint
  - <a href="https://www.thingiverse.com/thing:2797774/remixes">CR-10 RaspberryPi Ethernet Camera Mount Kit</a>
 # 4. Port Fowarding
- - Naver > ip주소확인 > Getting your private IP at home<br>
+ - Naver > Searching with the keyword like "ip주소확인" > Checking your private IP used at home<br>
  - ipTIME > 192.168.0.1 > Log-in > Advanced Setup > NAT/Routing > Port Forwarding > + Add new rule > Input "RUle Name" > Choice "Port Foward(User) > Input "Internal IP" such like 192.168.0.x > Choice "TCP" on the field of Protocol > Input "XXXX" on the left filed of External port > Input "XX" on the left field of Internal port > Click the "Modify" button 
 # 5. Blogs
  - <a href="https://cosmosjs.blog.me/221516473588">라즈베리파이와 OctoPrint를 이용한 3D 프린터 원격제어</a>

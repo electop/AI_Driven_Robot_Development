@@ -6,8 +6,8 @@
   . $cd boot > $nano pctopi-wpa-supplicant.txt<br>
   . ...<br>
     network={<br>
-      ssid=" <font color="blue">YOUR_AP_NAME</font> "<br>
-      psk=" <font color="blue">YOUR_AP_PW</font> "<br>
+      ssid="![#1589F0]YOUR_AP_NAME`#1589F0` "<br>
+      psk="![#1589F0]YOUR_AP_PW`#1589F0` "<br>
     }<br>
   . ^X > Y<br>
   . $ifconfig > checking the IP address of your OctoPrint device<br>

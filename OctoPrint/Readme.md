@@ -20,9 +20,8 @@
   - $sudo apt-get install putty<br>
   - $putty > Host Name: "YOUR_OCTOPRINT_DEVICE_IP" > Saved Sessions: "OctoPrint" > Click "Save" button<br>
 # 3. Making case for devices of OctoPrint
-  - 
-
-# 3. Blogs
+  - <a href="https://www.thingiverse.com/thing:2797774/remixes">CR-10 RaspberryPi Ethernet Camera Mount Kit</a>
+# 4. Blogs
  - <a href="https://cosmosjs.blog.me/221516473588">라즈베리파이와 OctoPrint를 이용한 3D 프린터 원격제어</a>
  - <a href="https://seoulworkshop.blog.me/221265052717">공유기 포트포워딩 설정하기</a>
  - <a href="https://m.blog.naver.com/PostView.nhn?blogId=seoulworkshop&logNo=221262339483&proxyReferer=https%3A%2F%2Fwww.google.com%2F">OctoPrint 세팅 2 - OctoPi 설치 및 WiFi 연결 설정</a>

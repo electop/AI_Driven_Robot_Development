@@ -22,7 +22,7 @@
   - $putty > Host Name: "YOUR_OCTOPRINT_DEVICE_IP" > Saved Sessions: "OctoPrint" > Click the "Save" button > Click the "Open" button
 # 3. Making case for devices of OctoPrint
  - <a href="https://www.thingiverse.com/thing:2797774/remixes">CR-10 RaspberryPi Ethernet Camera Mount Kit</a>
-   <img src="https://cdn.thingiverse.com/renders/e3/b2/47/75/33/fea04dd546a653231a598e4ac9940c03_preview_featured.jpg">
+   <img src="https://cdn.thingiverse.com/renders/e3/b2/47/75/33/fea04dd546a653231a598e4ac9940c03_preview_featured.jpg" align="left">
 # 4. Port Fowarding
  - Naver > Searching with the keyword like "ip주소확인" > Checking your private IP used at home<br>
  - ipTIME > 192.168.0.1 > Log-in > Advanced Setup > NAT/Routing > Port Forwarding > + Add new rule > Input "RUle Name" > Choice "Port Foward(User) > Input "Internal IP" such like 192.168.0.x > Choice "TCP" on the field of Protocol > Input "XXXX" on the left filed of External port > Input "XX" on the left field of Internal port > Click the "Modify" button 

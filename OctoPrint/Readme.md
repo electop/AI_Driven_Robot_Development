@@ -19,6 +19,8 @@
   ## Your PC(@Ubuntu)
   - $sudo apt-get install putty<br>
   - $putty > Host Name: "YOUR_OCTOPRINT_DEVICE_IP" > Saved Sessions: "OctoPrint" > Click "Save" button<br>
+# 3. Making case for devices of OctoPrint
+  - 
 
 # 3. Blogs
  - <a href="https://cosmosjs.blog.me/221516473588">라즈베리파이와 OctoPrint를 이용한 3D 프린터 원격제어</a>

@@ -15,6 +15,8 @@ https://www.thingiverse.com/thing:3624736<br>
 5. midTbot (Oct 16, 2017)<br>
 https://www.thingiverse.com/thing:2587684<br>
 http://www.buildlog.net/blog/2017/10/the-midtbot-a-new-flavor-of-h-bot/<br>
+    - PCB DipTrace file : MidTBot_PCB_V1
+    - PCB Gerber file : midTbot_Gerber_v1
 <img src="https://cdn.thingiverse.com/renders/9f/e1/e8/41/3c/1ea54ba4b695a37cefbbd15caf575798_preview_featured.jpg" alt="Drawing Robot - Arduino Uno + CNC Shield + GRBL" height="302" width="403"><br>
 
 # Summary for Drawing Robot

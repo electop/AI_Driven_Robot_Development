@@ -14,6 +14,7 @@ https://www.thingiverse.com/thing:3624736<br>
 <img src="https://cdn.thingiverse.com/renders/24/96/ef/3e/99/292e86631f99ae4fcbbee7533d82bcfc_preview_featured.jpg" alt="Drawing Robot - Arduino Uno + CNC Shield + GRBL" height="302" width="403"><br>
 5. midTbot (Oct 16, 2017)<br>
 https://www.thingiverse.com/thing:2587684<br>
+http://www.buildlog.net/blog/2017/10/the-midtbot-a-new-flavor-of-h-bot/<br>
 <img src="https://cdn.thingiverse.com/renders/9f/e1/e8/41/3c/1ea54ba4b695a37cefbbd15caf575798_preview_featured.jpg" alt="Drawing Robot - Arduino Uno + CNC Shield + GRBL" height="302" width="403"><br>
 
 # Summary for Drawing Robot

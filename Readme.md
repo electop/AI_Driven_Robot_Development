@@ -5,17 +5,17 @@ https://www.youtube.com/watch?time_continue=3&v=vTD7USqdXJI<br>
 <img src="https://cdn.thingiverse.com/renders/0c/90/3f/fb/04/45ea13cb80020e78b923b75b8021c750_preview_featured.JPG" alt="Drawing Robot - Arduino Uno + CNC Shield + GRBL" height="302" width="403"><br>
 2. EEZYxyDRAW (Aug 24, 2018)<br>
 https://www.thingiverse.com/thing:2936872<br>
-<img src="https://cdn.thingiverse.com/renders/2c/ef/19/21/3e/c7dce7de062a3b1610eeea9f624ee118_preview_featured.jpg" alt="Drawing Robot - Arduino Uno + CNC Shield + GRBL" height="302" width="403"><br>
+<img src="https://cdn.thingiverse.com/renders/2c/ef/19/21/3e/c7dce7de062a3b1610eeea9f624ee118_preview_featured.jpg" alt="EEZYxyDRAW" height="302" width="403"><br>
 3. drawbot (Sep 12, 2018)<br>
 https://www.thingiverse.com/thing:3096135<br>
-<img src="https://cdn.thingiverse.com/renders/e9/1e/b3/35/48/c63a890f3c0ff4ee8993b40c5bfdacdf_preview_featured.jpg" alt="Drawing Robot - Arduino Uno + CNC Shield + GRBL" height="302" width="403"><br>
+<img src="https://cdn.thingiverse.com/renders/e9/1e/b3/35/48/c63a890f3c0ff4ee8993b40c5bfdacdf_preview_featured.jpg" alt="drawbot" height="302" width="403"><br>
 4. Cosmos Drawbot 1.0 (May 12, 2019)<br>
 https://www.thingiverse.com/thing:3624736<br>
-<img src="https://cdn.thingiverse.com/renders/24/96/ef/3e/99/292e86631f99ae4fcbbee7533d82bcfc_preview_featured.jpg" alt="Drawing Robot - Arduino Uno + CNC Shield + GRBL" height="302" width="403"><br>
+<img src="https://cdn.thingiverse.com/renders/24/96/ef/3e/99/292e86631f99ae4fcbbee7533d82bcfc_preview_featured.jpg" alt="Cosmos Drawbot 1.0" height="302" width="403"><br>
 5. midTbot (Oct 16, 2017)<br>
 https://www.thingiverse.com/thing:2587684<br>
 http://www.buildlog.net/blog/2017/10/the-midtbot-a-new-flavor-of-h-bot/<br>
-<img src="https://cdn.thingiverse.com/renders/9f/e1/e8/41/3c/1ea54ba4b695a37cefbbd15caf575798_preview_featured.jpg" alt="Drawing Robot - Arduino Uno + CNC Shield + GRBL" height="302" width="403"><br>
+<img src="https://cdn.thingiverse.com/renders/9f/e1/e8/41/3c/1ea54ba4b695a37cefbbd15caf575798_preview_featured.jpg" alt="midTbot" height="302" width="403"><br>
     - PCB DipTrace file : <a href="http://www.buildlog.net/blog/wp-content/uploads/2017/10/MidTBot_PCB_V1.zip">MidTBot_PCB_V1</a><br>
     - PCB Gerber file : <a href="http://www.buildlog.net/blog/wp-content/uploads/2017/10/midTbot_Gerber_v1.zip">midTbot_Gerber_v1</a>
 

@@ -24,6 +24,6 @@ No.	|	Check	|	Category	|	Name	|	Num	|	Unit Price	|	 Price 	|	Description	|	Selle
 22	|	O	|	H/W	|	624zz bearings with the idler pulley	|	-	|		|		|		|		|	https://www.thingiverse.com/thing:2424284	
 23	|	O	|	H/W	|	M8 와셔	|	4	|	70	|	280	|		|	영원툴	|	https://smartstore.naver.com/0109/products/2262082335	
 24	|	O	|	H/W	|	M8 육각너트 스텐 서스	|	4	|	40	|	160	|		|	영원툴	|	https://smartstore.naver.com/0109/products/2233911416	
-
+25	|	O	|	H/W	|	CG0 서보모터 연장케이블	|	1	|	2,660	|	2,660	|		|		|	https://smartstore.naver.com/0109/products/2233911416	
 
 

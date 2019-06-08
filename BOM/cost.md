@@ -1,13 +1,15 @@
-### 지출 : 484,517
-### 잔여예산 : 115,483
+### 지출 : 538,241
+### 잔여예산 : 61,759
 
 구입처|구매일| 비용 |내역
 ---	|	---	|	---	|	---
+내써팝|2019-06-09| 15,300 |타이밍 풀리 6m, GT2 벨트 고정 클립, 피딩 스프링
+AliExpress|2019-06-09| 38,424 |New Magnetic Print Bed 200mm Build Plate Tape Flex Palte Update 3D Printer
 영원툴|2019-06-04| 4,540 |M8 너트, 와셔
-AliExpress|2019-5-20| 5,189 |2pcs chrome steel Cylindrical roller Dowel Locating Pin M3 M4 M5 3mm / 4mm / 5mm * 50 55 60 70 80 mm Smooth Rods Linear Shaft
-베어링가계|2019-5-20| 84,600 |열처리 연마봉 M8x350mm(6), M8x450mm(6)
-내써팝|2019-5-17| 31,950 |타이밍 풀리 GT2 기어 1... 외 3개
-Amazon|2019-1-2| 99,324 |304 Stainless Steel Screws Nuts and Washers 1200PCS, Sutemribor M2 M3 M4 Hex Socket Head Cap Bolts Screws Nuts Washers Assortment Kit with Three Hex Wrenches
+AliExpress|2019-05-20| 5,189 |2pcs chrome steel Cylindrical roller Dowel Locating Pin M3 M4 M5 3mm / 4mm / 5mm * 50 55 60 70 80 mm Smooth Rods Linear Shaft
+베어링가계|2019-05-20| 84,600 |열처리 연마봉 M8x350mm(6), M8x450mm(6)
+내써팝|2019-05-17| 31,950 |타이밍 풀리 GT2 기어 1... 외 3개
+Amazon|2019-01-2| 99,324 |304 Stainless Steel Screws Nuts and Washers 1200PCS, Sutemribor M2 M3 M4 Hex Socket Head Cap Bolts Screws Nuts Washers Assortment Kit with Three Hex Wrenches
 서브무역|2018-12-30| 16,900 |실리콘 구리스 뿌리는 그리스 스프레이 (3M 실리콘 루브리컨트)
 Amazon|2018-12-17| 51,934 |2 of LE Power Adapter, 2A, AC 100-240V to DC 12V Transformer, 24W Switching Power Supply, US Plug Power Converter for LED Strip Light and More, Pack of 2
 미스터조각기|2018-12-17| 100,200 |ANET A8 NEMA17 ... 외 1개

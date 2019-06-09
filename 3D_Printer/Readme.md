@@ -27,7 +27,7 @@
            - Top Layers : 6
        - Bottom Thickness : 1.2mm
            - Bottom Layers : 6
-   - Top/Bottom Pattern : 
+   - Top/Bottom Pattern : Lines
    ```
    Lines, zig zag, concentric and 'line direction' with custom value [90]
    ```

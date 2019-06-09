@@ -34,6 +34,7 @@
        <img src="https://ultimaker.com/photo/image/1300x0/5a71dfed3bb56/TopBottomPattern.png">
    - Optimize Wall Printing Order : no check
    - Fill Gaps Between Walls : Everywhere
+       <img src="https://ultimaker.com/photo/image/1300x0/592c1cd715c45/Fill-gaps-between-walls.png">
    - Horizontal Expansion : 0mm
    - Enable Ironing : 0mm
    ### Infill

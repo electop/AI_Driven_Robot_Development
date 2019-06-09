@@ -27,6 +27,11 @@
            - Top Layers : 6
        - Bottom Thickness : 1.2mm
            - Bottom Layers : 6
+   - Top/Bottom Pattern : 
+   ```
+   Lines, zig zag, concentric and 'line direction' with custom value [90]
+   ```
+   <img src="https://ultimaker.com/photo/image/1300x0/5a71dfed3bb56/TopBottomPattern.png">
    - Optimize Wall Printing Order : no check
    - Fill Gaps Between Walls : Everywhere
    - Horizontal Expansion : 0mm

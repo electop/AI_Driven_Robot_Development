@@ -54,7 +54,7 @@ http://www.buildlog.net/blog/2017/10/the-midtbot-a-new-flavor-of-h-bot/<br>
         $131=220.000 (y max travel, mm)
         $132=200.000 (z max travel, mm)
         ```
-   - Contents
+   - Contents<br>
         This drawing robot is similar to the commercially available AxiDraw. It is powered by an Arduino Uno controller, uses a CNC Shield, and GRBL firmware. The approximate cost to build this drawing robot is $100.
 
         Assembly documentation can be found in the Files section and at the following link. Thanks to Jonathan K for supplying this documentation.<br>
@@ -68,11 +68,11 @@ http://www.buildlog.net/blog/2017/10/the-midtbot-a-new-flavor-of-h-bot/<br>
 
         When setting up your hardware you must do the following:
 
-          1. Be sure to install 3 jumpers on the CNC Shield for each stepper driver. There's a photo showing the jumpers.
-          2. You must use the GRBL version pointed to in the link below. Replace the "config.h" file with the one provided which has the correct features enabled before you compile and download from the Arduino IDE. IF YOU FAIL TO PERFORM THIS STEP, the robot will draw at a 45 degree angle. Don't send me a message about this because it means you failed to perform this step
-          3. Set the GRBL parameters to the settings that are provided in one of the photos. This step is missing from the otherwise excellent instructions. You must do this or the robot will not work.
-          4. Be sure to set the correct MI Extension parameters the first time you get the MI extension pop up.
-          5. If you have problems with your stepper motors moving and you believe everything else above is OK, check that the small current adjustment on your stepper drivers are set mid point and also set the drive current to 1 amp using the correct procedure for your driver.
+        1. Be sure to install 3 jumpers on the CNC Shield for each stepper driver. There's a photo showing the jumpers.
+        2. You must use the GRBL version pointed to in the link below. Replace the "config.h" file with the one provided which has the correct features enabled before you compile and download from the Arduino IDE. IF YOU FAIL TO PERFORM THIS STEP, the robot will draw at a 45 degree angle. Don't send me a message about this because it means you failed to perform this step
+        3. Set the GRBL parameters to the settings that are provided in one of the photos. This step is missing from the otherwise excellent instructions. You must do this or the robot will not work.
+        4. Be sure to set the correct MI Extension parameters the first time you get the MI extension pop up.
+        5. If you have problems with your stepper motors moving and you believe everything else above is OK, check that the small current adjustment on your stepper drivers are set mid point and also set the drive current to 1 amp using the correct procedure for your driver.
 
         I have posted all the parts needed from the two source designs. There are only 15 parts to print and none of them are very large. I added a stronger pen slider and a controller enclosure. There is an even better pen holder in the remix section. I also clarified the names that were in Spanish. I have posted all needed files so that there isn't confusion regarding which parts are needed from each of the original designs.
 

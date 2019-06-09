@@ -34,7 +34,22 @@
    - Infill Density : 40%
        - Infill Line Distance : 3.0mm
    - Infill Pattern : <a href="https://ultimaker.com/en/resources/52670-infill">Cubic Subdivision</a>
-     <img src="https://ultimaker.com/photo/image/1300x0/5b33789c313a7/InfillPatterns.png>
+     ```
+     Grid: Strong 2D infill
+     Lines: Quick 2D infill
+     Triangles: Strong 2D infill
+     Tri-hexagon: Strong 2D infill
+     Cubic: Strong 3D infill
+     Cubic (subdivision): Strong 3D infill (this saves material compared to Cubic)
+     Octet: Strong 3D infill
+     Quarter cubic: Strong 3D infill
+     Concentric: Flexible 3D infill
+     Concentric 3D : Flexible 3D infill
+     Zig-zag: A grid shaped infill, printing continuously in one diagonal direction
+     Cross: Flexible 3D infill
+     Cross 3D: Flexible 3D infill
+     ```
+     <img src="https://ultimaker.com/photo/image/1300x0/5b33789c313a7/InfillPatterns.png" title="">
    - Infill Line Multiplier : 1
    - Infill Overlap Percentage : 10%
    - Infill Layer Thickness : 0.2mm

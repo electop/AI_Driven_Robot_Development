@@ -7,6 +7,7 @@
    ```
    This setting is based on my experience.
    If you have nice recommendations better than me, please let me know.
+   For reference, if necessary, I will update continuously.
    ```
    ### Quality
    - Layer Height : 0.2mm

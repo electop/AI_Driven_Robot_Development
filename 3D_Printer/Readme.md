@@ -34,7 +34,7 @@
    - Infill Overlap Percentage : 10%
    - Infill Layer Thickness : 0.2mm
    - Infill Before Walls : no check
-   ## Material
+   ### Material
    - Printing Temperature : 200
    - Printing Temperature Initial Layer : 200
    - Initial Printing Temperature : 190
@@ -45,7 +45,7 @@
    - Retract at Layer Change : no check
    - Retraction Distance : 1.7
    - Retraction Speed : 45mm/s
-   ## Speed
+   ### Speed
    - Print Speed : 40mm/s
        - Infill Speed : 40mm/s
        - Wall Speed : 20.0mm/s

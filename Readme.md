@@ -20,82 +20,83 @@ http://www.buildlog.net/blog/2017/10/the-midtbot-a-new-flavor-of-h-bot/<br>
     - PCB Gerber file : <a href="http://www.buildlog.net/blog/wp-content/uploads/2017/10/midTbot_Gerber_v1.zip">midTbot_Gerber_v1</a>
 
 # Summary for Drawing Robot
-- Configuration
-```
-$0=10 (step pulse, usec)
-$1=25 (step idle delay, msec)
-$2=0 (step port invert mask:00000000)
-$3=0 (dir port invert mask:00000000)
-$4=0 (step enable invert, bool)
-$5=0 (limit pins invert, bool)
-$6=0 (probe pin invert, bool)
-$10=3 (status report mask:00000011)
-$11=0.010 (junction deviation, mm)
-$12=0.002 (arc tolerance, mm)
-$13=0 (report inches, bool)
-$20=0 (soft limits, bool)
-$21=0 (hard limits, bool)
-$22=0 (homing cycle, bool)
-$23=0 (homing dir invert mask:00000000)
-$24=25.000 (homing feed, mm/min)
-$25=500.000 (homing seek, mm/min)
-$26=250 (homing debounce, msec)
-$27=1.000 (homing pull-off, mm)
-$100=100.000 (x, step/mm) > GT2 Pully : 내경 5mm, 외경 13mm, 높이 14mm, Pitch 2mm, 16 teeth
-$101=100.000 (y, step/mm)
-$102=100.000 (z, step/mm)
-$110=3000.000 (x max rate, mm/min)
-$111=3000.000 (y max rate, mm/min)
-$112=3000.000 (z max rate, mm/min)
-$120=1000.000 (x accel, mm/sec^2)
-$121=1000.000 (y accel, mm/sec^2)
-$122=1000.000 (z accel, mm/sec^2)
-$130=300.000 (x max travel, mm)
-$131=220.000 (y max travel, mm)
-$132=200.000 (z max travel, mm)
-```
-This drawing robot is similar to the commercially available AxiDraw. It is powered by an Arduino Uno controller, uses a CNC Shield, and GRBL firmware. The approximate cost to build this drawing robot is $100.
+    - Configuration
+    ```
+    $0=10 (step pulse, usec)
+    $1=25 (step idle delay, msec)
+    $2=0 (step port invert mask:00000000)
+    $3=0 (dir port invert mask:00000000)
+    $4=0 (step enable invert, bool)
+    $5=0 (limit pins invert, bool)
+    $6=0 (probe pin invert, bool)
+    $10=3 (status report mask:00000011)
+    $11=0.010 (junction deviation, mm)
+    $12=0.002 (arc tolerance, mm)
+    $13=0 (report inches, bool)
+    $20=0 (soft limits, bool)
+    $21=0 (hard limits, bool)
+    $22=0 (homing cycle, bool)
+    $23=0 (homing dir invert mask:00000000)
+    $24=25.000 (homing feed, mm/min)
+    $25=500.000 (homing seek, mm/min)
+    $26=250 (homing debounce, msec)
+    $27=1.000 (homing pull-off, mm)
+    $100=100.000 (x, step/mm) > GT2 Pully : 내경 5mm, 외경 13mm, 높이 14mm, Pitch 2mm, 16 teeth
+    $101=100.000 (y, step/mm)
+    $102=100.000 (z, step/mm)
+    $110=3000.000 (x max rate, mm/min)
+    $111=3000.000 (y max rate, mm/min)
+    $112=3000.000 (z max rate, mm/min)
+    $120=1000.000 (x accel, mm/sec^2)
+    $121=1000.000 (y accel, mm/sec^2)
+    $122=1000.000 (z accel, mm/sec^2)
+    $130=300.000 (x max travel, mm)
+    $131=220.000 (y max travel, mm)
+    $132=200.000 (z max travel, mm)
+    ```
+    - Contents
+        This drawing robot is similar to the commercially available AxiDraw. It is powered by an Arduino Uno controller, uses a CNC Shield, and GRBL firmware. The approximate cost to build this drawing robot is $100.
 
-Assembly documentation can be found in the Files section and at the following link. Thanks to Jonathan K for supplying this documentation.<br>
-https://docs.google.com/presentation/d/1GihJuR7yHVtUPYCp9GVDHLsJUhT2RwPrkIopzYrXYhw/edit?usp=sharing
+        Assembly documentation can be found in the Files section and at the following link. Thanks to Jonathan K for supplying this documentation.<br>
+        https://docs.google.com/presentation/d/1GihJuR7yHVtUPYCp9GVDHLsJUhT2RwPrkIopzYrXYhw/edit?usp=sharing
 
-There's also a document which explains how to install Inkscape, the Inkscape MI extension, and the Universal G-Code Sender. It guides you through three example projects and can be found in the Files section of this Thing. Use these instructions instead of the last three pages of the assembly document which describe a different G-Code extension.
+        There's also a document which explains how to install Inkscape, the Inkscape MI extension, and the Universal G-Code Sender. It guides you through three example projects and can be found in the Files section of this Thing. Use these instructions instead of the last three pages of the assembly document which describe a different G-Code extension.
 
-This drawing robot allows you to draw things in Inkscape and then plot them out. The drawing robot receives G Code commands that are created inside an Inkscape extension called MI. Below are the links to the software used. There's a document in the Files section explaining how to use the software.
+        This drawing robot allows you to draw things in Inkscape and then plot them out. The drawing robot receives G Code commands that are created inside an Inkscape extension called MI. Below are the links to the software used. There's a document in the Files section explaining how to use the software.
 
-Print all the parts. Assemble them using the assembly guide and then use the installation and use guide to start using your Draw Robot.
+        Print all the parts. Assemble them using the assembly guide and then use the installation and use guide to start using your Draw Robot.
 
-When setting up your hardware you must do the following:
+        When setting up your hardware you must do the following:
 
-  1. Be sure to install 3 jumpers on the CNC Shield for each stepper driver. There's a photo showing the jumpers.
-  2. You must use the GRBL version pointed to in the link below. Replace the "config.h" file with the one provided which has the correct features enabled before you compile and download from the Arduino IDE. IF YOU FAIL TO PERFORM THIS STEP, the robot will draw at a 45 degree angle. Don't send me a message about this because it means you failed to perform this step
-  3. Set the GRBL parameters to the settings that are provided in one of the photos. This step is missing from the otherwise excellent instructions. You must do this or the robot will not work.
-  4. Be sure to set the correct MI Extension parameters the first time you get the MI extension pop up.
-  5. If you have problems with your stepper motors moving and you believe everything else above is OK, check that the small current adjustment on your stepper drivers are set mid point and also set the drive current to 1 amp using the correct procedure for your driver.
+          1. Be sure to install 3 jumpers on the CNC Shield for each stepper driver. There's a photo showing the jumpers.
+          2. You must use the GRBL version pointed to in the link below. Replace the "config.h" file with the one provided which has the correct features enabled before you compile and download from the Arduino IDE. IF YOU FAIL TO PERFORM THIS STEP, the robot will draw at a 45 degree angle. Don't send me a message about this because it means you failed to perform this step
+          3. Set the GRBL parameters to the settings that are provided in one of the photos. This step is missing from the otherwise excellent instructions. You must do this or the robot will not work.
+          4. Be sure to set the correct MI Extension parameters the first time you get the MI extension pop up.
+          5. If you have problems with your stepper motors moving and you believe everything else above is OK, check that the small current adjustment on your stepper drivers are set mid point and also set the drive current to 1 amp using the correct procedure for your driver.
 
-I have posted all the parts needed from the two source designs. There are only 15 parts to print and none of them are very large. I added a stronger pen slider and a controller enclosure. There is an even better pen holder in the remix section. I also clarified the names that were in Spanish. I have posted all needed files so that there isn't confusion regarding which parts are needed from each of the original designs.
+        I have posted all the parts needed from the two source designs. There are only 15 parts to print and none of them are very large. I added a stronger pen slider and a controller enclosure. There is an even better pen holder in the remix section. I also clarified the names that were in Spanish. I have posted all needed files so that there isn't confusion regarding which parts are needed from each of the original designs.
 
-My drawing robot is modified version of this one<br>
-https://www.thingiverse.com/thing:2058866
+        My drawing robot is modified version of this one<br>
+        https://www.thingiverse.com/thing:2058866
 
-Place this version of GRBL Firmware for the Arduino on your computer. You must use this version of GRBL. Other GRBL versions do not have the control code for the Z axis servo.<br>
-https://github.com/robottini/grbl-servo
+        Place this version of GRBL Firmware for the Arduino on your computer. You must use this version of GRBL. Other GRBL versions do not have the control code for the Z axis servo.<br>
+        https://github.com/robottini/grbl-servo
 
-Replace the default config.h file in GRBL with the one supplied in the "Thing Files" section
+        Replace the default config.h file in GRBL with the one supplied in the "Thing Files" section
 
-Upload GRBL to your Arduino Uno using these instructions<br>
-https://github.com/grbl/grbl/wiki/Compiling-Grbl (Ignore references to GRBL V1.1)<br>
-You must copy the config.h which I supply here to the directory where GRBL resides and then do the upload. The new config.h will be used for the compile of the GRBL code.
+        Upload GRBL to your Arduino Uno using these instructions<br>
+        https://github.com/grbl/grbl/wiki/Compiling-Grbl (Ignore references to GRBL V1.1)<br>
+        You must copy the config.h which I supply here to the directory where GRBL resides and then do the upload. The new config.h will be used for the compile of the GRBL code.
 
-Inkscape Drawing Software<br>
-https://inkscape.org/en/
+        Inkscape Drawing Software<br>
+        https://inkscape.org/en/
 
-Universal G-Code Sender<br>
-https://winder.github.io/ugs_website/download/<br>
+        Universal G-Code Sender<br>
+        https://winder.github.io/ugs_website/download/<br>
 
-Use the Inkscape MI Extension to generate G Code:<br>
-http://www.mediafire.com/file/ae0wquqornzc3o2/MI+Inkscape+Extension.zip<br>
-There is a tutorial in the Files section on how to use the software.
+        Use the Inkscape MI Extension to generate G Code:<br>
+        http://www.mediafire.com/file/ae0wquqornzc3o2/MI+Inkscape+Extension.zip<br>
+        There is a tutorial in the Files section on how to use the software.
 
 ## HARDWARE NEEDED<br>
 2x Nema 17 Stepper Motors<br>

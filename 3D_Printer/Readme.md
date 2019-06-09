@@ -4,6 +4,10 @@
    - CR-10S5 or ANET A8(Prusa i3)
    - OctoPrint 1.3.11
    ## Settings
+   ```
+   This setting is based on my experience.
+   If you have nice recommendations better than me, please let me know.
+   ```
    ### Quality
    - Layer Height : 0.2mm
    - initial Layer Height : 0.25mm

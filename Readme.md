@@ -167,3 +167,4 @@ A few people have run into software errors when using the GRBL MI Extension. Thi
 
 Also:<br>
 There are various Stepper Motor drivers that are slightly different. in some cases the current adjust pot is on the opposite end of the module which can be confusing when trying to plug it in based on my photos. Be sure to check the pin names and plug your module in with the pin names that match. I'm sorry but I don't have time to figure out your individual hardware configuration problems. This design works but it can require some troubleshooting if software or hardware is different than what I happened to use. When you figure out your problem, be sure to post the solution in the comments so that others may benefit from your experience.
+ 

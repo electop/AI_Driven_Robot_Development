@@ -3,7 +3,8 @@
    - Cura 4.1.0
    - CR-10S5 or ANET A8(Prusa i3)
    - OctoPrint 1.3.11
-   ## Quality
+   ## Settings
+   ### Quality
    - Layer Height : 0.2mm
    - initial Layer Height : 0.25mm
    - Line Width : 0.4mm
@@ -13,7 +14,7 @@
        - Top/Bottom Line Width : 0.4mm
        - Infill Line Width : 0.4mm
        - Initial Layer Line Width : 100%
-   ## Shell
+   ### Shell
    - Wall Thickness : 1.2mm
        - Wall Line Count : 3
    - Top/Bottom Thickness : 1.2mm
@@ -25,7 +26,7 @@
    - Fill Gaps Between Walls : Everywhere
    - Horizontal Expansion : 0mm
    - Enable Ironing : 0mm
-   ## Infill
+   ### Infill
    - Infill Density : 40%
        - Infill Line Distance : 3.0mm
    - Infill Pattern : Cubic Subdivision
@@ -61,7 +62,7 @@
    - Maximum Z Speed : 40mm/s
    - Enable Acceleration Control : no check
    - Enable Jerk Control : no check
-   ## Travel
+   ### Travel
    - Combining Mode : Not in Skin
    - Avoid Printed Parts When Traveling : check
    - Avoid Supports When Traveling : no check
@@ -69,7 +70,7 @@
    - Z Hop When Retracted : check
    - Z Hop Only Over Printed Parts : no check
    - Z Hop Height : 1mm
-   ## Cooling
+   ### Cooling
    - Enable Print Cooling : check
    - Fan Speed : 100.0%
       - Regular Fan Speed : 100.0%
@@ -81,7 +82,7 @@
    - Minimum Layer Time : 0
    - Minimum Speed : 10mm/s
    - Lift Head : no check
-   ## Support
+   ### Support
    - Generate Support : check
    - Support Placement : Everywhere
    - Support Overhang Angle : 55
@@ -93,13 +94,13 @@
    - Enable Support Interface : check
        - Enable Support Roof : check
        - Enable Support Floor : check
-   ## Build Plate Adhesion
+   ### Build Plate Adhesion
    - Build Plate Adhesion Type : Skirt
    - Skirt Line Count : 6
-   ## Dual Extrusion : No item
-   ## Special Modes
+   ### Dual Extrusion : No item
+   ### Special Modes
    - Print Sequence : All at Once
    - Surface MOde : Noraml
    - Spiralize Outer Contour : no check
-   ## Experimental : No item
+   ### Experimental : No item
    

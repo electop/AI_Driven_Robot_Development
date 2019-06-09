@@ -72,9 +72,34 @@
    ## Cooling
    - Enable Print Cooling : check
    - Fan Speed : 100.0%
-       - Regular Fan Speed : 100.0%
-       - Maximum Fan Speed : 100.0%
-    - Regular/Maximum Speed Threshold : 10s
-    Initial Fan Speed : 0%
-    
+      - Regular Fan Speed : 100.0%
+      - Maximum Fan Speed : 100.0%
+   - Regular/Maximum Speed Threshold : 10s
+   - Initial Fan Speed : 0%
+   - Regular Fan Speed at Height : 0.25mm
+       - Regular Fan Speed at Layer : 2
+   - Minimum Layer Time : 0
+   - Minimum Speed : 10mm/s
+   - Lift Head : no check
+   ## Support
+   - Generate Support : check
+   - Support Placement : Everywhere
+   - Support Overhang Angle : 55
+   - Support Pattern : Triangles
+   - Support Density : 15%
+   - Support Horizontal Expansion : 0mm
+   - Support Infil Layer Thickness : 0.2mm
+   - Gradual Support Infill Steps : 0
+   - Enable Support Interface : check
+       - Enable Support Roof : check
+       - Enable Support Floor : check
+   ## Build Plate Adhesion
+   - Build Plate Adhesion Type : Skirt
+   - Skirt Line Count : 6
+   ## Dual Extrusion : No item
+   ## Special Modes
+   - Print Sequence : All at Once
+   - Surface MOde : Noraml
+   - Spiralize Outer Contour : no check
+   ## Experimental : No item
    

@@ -34,6 +34,7 @@
    - Infill Density : 40%
        - Infill Line Distance : 3.0mm
    - Infill Pattern : <a href="https://ultimaker.com/en/resources/52670-infill">Cubic Subdivision</a>
+     <img src="https://ultimaker.com/photo/image/1300x0/5b33789c313a7/InfillPatterns.png>
    - Infill Line Multiplier : 1
    - Infill Overlap Percentage : 10%
    - Infill Layer Thickness : 0.2mm
@@ -91,6 +92,7 @@
    - Support Placement : Everywhere
    - Support Overhang Angle : 55
    - Support Pattern : <a href="https://ultimaker.com/en/resources/20422-cura-support-settings">Triangles</a>
+     <img src="https://ultimaker.com/photo/image/1300x0/5744447ebb127/Support-patterns.png">
    - Support Density : 15%
    - Support Horizontal Expansion : 0mm
    - Support Infil Layer Thickness : 0.2mm
@@ -104,7 +106,7 @@
    ### Dual Extrusion : No item
    ### Special Modes
    - Print Sequence : All at Once
-   - Surface MOde : Noraml
+   - Surface Mode : Normal
    - Spiralize Outer Contour : no check
    ### Experimental : No item
    

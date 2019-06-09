@@ -20,41 +20,41 @@ http://www.buildlog.net/blog/2017/10/the-midtbot-a-new-flavor-of-h-bot/<br>
     - PCB Gerber file : <a href="http://www.buildlog.net/blog/wp-content/uploads/2017/10/midTbot_Gerber_v1.zip">midTbot_Gerber_v1</a>
 
 # Summary for Drawing Robot
-   ### Configuration
-    ```
-    $0=10 (step pulse, usec)
-    $1=25 (step idle delay, msec)
-    $2=0 (step port invert mask:00000000)
-    $3=0 (dir port invert mask:00000000)
-    $4=0 (step enable invert, bool)
-    $5=0 (limit pins invert, bool)
-    $6=0 (probe pin invert, bool)
-    $10=3 (status report mask:00000011)
-    $11=0.010 (junction deviation, mm)
-    $12=0.002 (arc tolerance, mm)
-    $13=0 (report inches, bool)
-    $20=0 (soft limits, bool)
-    $21=0 (hard limits, bool)
-    $22=0 (homing cycle, bool)
-    $23=0 (homing dir invert mask:00000000)
-    $24=25.000 (homing feed, mm/min)
-    $25=500.000 (homing seek, mm/min)
-    $26=250 (homing debounce, msec)
-    $27=1.000 (homing pull-off, mm)
-    $100=100.000 (x, step/mm) > GT2 Pully : 내경 5mm, 외경 13mm, 높이 14mm, Pitch 2mm, 16 teeth
-    $101=100.000 (y, step/mm)
-    $102=100.000 (z, step/mm)
-    $110=3000.000 (x max rate, mm/min)
-    $111=3000.000 (y max rate, mm/min)
-    $112=3000.000 (z max rate, mm/min)
-    $120=1000.000 (x accel, mm/sec^2)
-    $121=1000.000 (y accel, mm/sec^2)
-    $122=1000.000 (z accel, mm/sec^2)
-    $130=300.000 (x max travel, mm)
-    $131=220.000 (y max travel, mm)
-    $132=200.000 (z max travel, mm)
-    ```
-   ### Contents
+   - Configuration
+        ```
+        $0=10 (step pulse, usec)
+        $1=25 (step idle delay, msec)
+        $2=0 (step port invert mask:00000000)
+        $3=0 (dir port invert mask:00000000)
+        $4=0 (step enable invert, bool)
+        $5=0 (limit pins invert, bool)
+        $6=0 (probe pin invert, bool)
+        $10=3 (status report mask:00000011)
+        $11=0.010 (junction deviation, mm)
+        $12=0.002 (arc tolerance, mm)
+        $13=0 (report inches, bool)
+        $20=0 (soft limits, bool)
+        $21=0 (hard limits, bool)
+        $22=0 (homing cycle, bool)
+        $23=0 (homing dir invert mask:00000000)
+        $24=25.000 (homing feed, mm/min)
+        $25=500.000 (homing seek, mm/min)
+        $26=250 (homing debounce, msec)
+        $27=1.000 (homing pull-off, mm)
+        $100=100.000 (x, step/mm) > GT2 Pully : 내경 5mm, 외경 13mm, 높이 14mm, Pitch 2mm, 16 teeth
+        $101=100.000 (y, step/mm)
+        $102=100.000 (z, step/mm)
+        $110=3000.000 (x max rate, mm/min)
+        $111=3000.000 (y max rate, mm/min)
+        $112=3000.000 (z max rate, mm/min)
+        $120=1000.000 (x accel, mm/sec^2)
+        $121=1000.000 (y accel, mm/sec^2)
+        $122=1000.000 (z accel, mm/sec^2)
+        $130=300.000 (x max travel, mm)
+        $131=220.000 (y max travel, mm)
+        $132=200.000 (z max travel, mm)
+        ```
+   - Contents
     This drawing robot is similar to the commercially available AxiDraw. It is powered by an Arduino Uno controller, uses a CNC Shield, and GRBL firmware. The approximate cost to build this drawing robot is $100.
 
     Assembly documentation can be found in the Files section and at the following link. Thanks to Jonathan K for supplying this documentation.<br>

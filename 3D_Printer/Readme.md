@@ -33,7 +33,7 @@
    ### Infill
    - Infill Density : 40%
        - Infill Line Distance : 3.0mm
-   - Infill Pattern : Cubic Subdivision
+   - Infill Pattern : <a href="https://ultimaker.com/en/resources/52670-infill">Cubic Subdivision</a>
    - Infill Line Multiplier : 1
    - Infill Overlap Percentage : 10%
    - Infill Layer Thickness : 0.2mm
@@ -90,7 +90,7 @@
    - Generate Support : check
    - Support Placement : Everywhere
    - Support Overhang Angle : 55
-   - Support Pattern : Triangles
+   - Support Pattern : <a href="https://ultimaker.com/en/resources/20422-cura-support-settings">Triangles</a>
    - Support Density : 15%
    - Support Horizontal Expansion : 0mm
    - Support Infil Layer Thickness : 0.2mm

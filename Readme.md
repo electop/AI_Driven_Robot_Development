@@ -21,7 +21,8 @@ http://www.buildlog.net/blog/2017/10/the-midtbot-a-new-flavor-of-h-bot/<br>
 
 # Summary for Drawing Robot
 - Configuration
-    - $0=10 (step pulse, usec)
+```
+$0=10 (step pulse, usec)
 $1=25 (step idle delay, msec)
 $2=0 (step port invert mask:00000000)
 $3=0 (dir port invert mask:00000000)
@@ -52,7 +53,8 @@ $122=1000.000 (z accel, mm/sec^2)
 $130=300.000 (x max travel, mm)
 $131=220.000 (y max travel, mm)
 $132=200.000 (z max travel, mm)
-- This drawing robot is similar to the commercially available AxiDraw. It is powered by an Arduino Uno controller, uses a CNC Shield, and GRBL firmware. The approximate cost to build this drawing robot is $100.
+```
+This drawing robot is similar to the commercially available AxiDraw. It is powered by an Arduino Uno controller, uses a CNC Shield, and GRBL firmware. The approximate cost to build this drawing robot is $100.
 
 Assembly documentation can be found in the Files section and at the following link. Thanks to Jonathan K for supplying this documentation.<br>
 https://docs.google.com/presentation/d/1GihJuR7yHVtUPYCp9GVDHLsJUhT2RwPrkIopzYrXYhw/edit?usp=sharing

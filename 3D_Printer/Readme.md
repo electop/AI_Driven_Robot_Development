@@ -62,10 +62,10 @@
    - Infill Layer Thickness : 0.2mm
    - Infill Before Walls : no check
    ### Material
-   - Printing Temperature : 200
-   - Printing Temperature Initial Layer : 200
-   - Initial Printing Temperature : 190
-   - Final Printing Temperature : 185
+   - Printing Temperature : 190
+   - Printing Temperature Initial Layer : 190
+   - Initial Printing Temperature : 180
+   - Final Printing Temperature : 175
    - Build Plate Temperature : 20
    - Build Plate Temperature Initial Layer : 20
    - Enable Retraction : check
@@ -80,7 +80,7 @@
            - Inner Wall Speed : 40mm/s
        - Top/Bottom Speed : 20m/s
        - Support Speed : 40mm/s
-           - Support Floor Speed : 20mm/s
+           - Support Floor Speed : 10mm/s
    - Travel Speed : 60mm/s
    - Initial Layer Speed : 20.0mm/s
        - Initial Layer Print Speed : 10mm/s
@@ -92,7 +92,7 @@
    ### Travel
    - Combining Mode : Not in Skin
    - Avoid Printed Parts When Traveling : check
-   - Avoid Supports When Traveling : no check
+   - Avoid Supports When Traveling : check
    - Travel Avoid Distance : 0.625mm
    - Z Hop When Retracted : check
    - Z Hop Only Over Printed Parts : no check

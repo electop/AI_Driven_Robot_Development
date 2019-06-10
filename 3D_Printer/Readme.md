@@ -69,7 +69,7 @@
    - Build Plate Temperature : 20
    - Build Plate Temperature Initial Layer : 20
    - Enable Retraction : check
-   - Retract at Layer Change : no check
+   - Retract at Layer Change : check
    - Retraction Distance : 1.7
    - Retraction Speed : 45mm/s
    ### Speed

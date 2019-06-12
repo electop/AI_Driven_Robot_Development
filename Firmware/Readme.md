@@ -1,7 +1,7 @@
 ### How to export hex file from arduion, using arduino IDE
    - cmd
    - cd C:\Program Files (x86)\Arduino\hardware\tools\avr\bin
-   - if com port is com6, execute "avrdude.exe -p m328p  -c arduino -C "..\etc\avrdude.conf" -P com6 -U flash:r:"C:\flash.hex":i" on "명령 프롬프트"
+   - if com port is com7, execute "avrdude.exe -p m328p  -c arduino -C "..\etc\avrdude.conf" -P com7 -U flash:r:"C:\flash.hex":i" on "명령 프롬프트"
    ```
    C:\Program Files (x86)\Arduino\hardware\tools\avr\bin>avrdude.exe -p m328p  -c arduino -C "..\etc\avrdude.conf" -P com7 -U flash:r:"C:\flash.hex":i
 

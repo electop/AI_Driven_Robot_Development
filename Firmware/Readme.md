@@ -21,7 +21,7 @@
    avrdude.exe done.  Thank you.
    ```
 
-### How to import hex file into arduino uno, using IDE
+### How to flash hex file into arduino uno, using IDE
    - cmd
    - cd C:\Program Files (x86)\Arduino\hardware\tools\avr\bin
    - if com port is com7, execute "avrdude.exe -p m328p  -c arduino -C "..\etc\avrdude.conf" -P com7 -U flash:w:"C:\flash.hex":i" on "명령 프롬프트"

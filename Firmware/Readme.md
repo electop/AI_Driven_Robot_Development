@@ -24,7 +24,7 @@
 ### How to flash hex file into arduino uno, using IDE
    - cmd
    - cd C:\Program Files (x86)\Arduino\hardware\tools\avr\bin
-   - if com port is com7 and there is hex file at C drive root, execute "avrdude.exe -p m328p  -c arduino -C "..\etc\avrdude.conf" -P com7 -U flash:w:"C:\flash.hex":i" on "명령 프롬프트"
+   - if com port is com7 and there is hex file at C drive root, execute "avrdude.exe -p m328p  -c arduino -C "..\etc\avrdude.conf" -P com7 -U flash:w:"C:\flash.hex":i" on "명령 프롬프트"<br>
      if there is no available hex file, please use 'falsh.hex' on this path.
    ```
    C:\Program Files (x86)\Arduino\hardware\tools\avr\bin>avrdude.exe -p m328p  -c arduino -C "..\etc\avrdude.conf" -P com7 -U flash:w:"C:\flash.hex":i

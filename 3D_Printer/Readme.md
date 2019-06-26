@@ -11,7 +11,7 @@
    ```
    ### Quality
    - Layer Height : 0.2mm
-   - initial Layer Height : 0.25mm
+   - initial Layer Height : 0.32mm
    - Line Width : 0.4mm
        - Wall Line Width : 0.4mm
            - Outer Wall Line Width : 0.4mm
@@ -36,10 +36,10 @@
    - Fill Gaps Between Walls : Everywhere
        <img src="https://ultimaker.com/photo/image/1300x0/592c1cd715c45/Fill-gaps-between-walls.png">
    - Horizontal Expansion : 0mm
-   - Enable Ironing : 0mm
+   - Enable Ironing : check
    ### Infill
-   - Infill Density : 40%
-       - Infill Line Distance : 3.0mm
+   - Infill Density : 16%
+       - Infill Line Distance : 7.5mm
    - Infill Pattern : <a href="https://ultimaker.com/en/resources/52670-infill">Cubic Subdivision</a>
      ```
      Grid: Strong 2D infill
@@ -62,16 +62,16 @@
    - Infill Layer Thickness : 0.2mm
    - Infill Before Walls : no check
    ### Material
-   - Printing Temperature : 190
-   - Printing Temperature Initial Layer : 190
-   - Initial Printing Temperature : 180
-   - Final Printing Temperature : 175
-   - Build Plate Temperature : 20
-   - Build Plate Temperature Initial Layer : 20
+   - Printing Temperature : 190℃
+   - Printing Temperature Initial Layer : 190℃
+   - Initial Printing Temperature : 180℃
+   - Final Printing Temperature : 175℃
+   - Build Plate Temperature : 20℃
+   - Build Plate Temperature Initial Layer : 20℃
    - Enable Retraction : check
    - Retract at Layer Change : check
-   - Retraction Distance : 1.7
-   - Retraction Speed : 45mm/s
+   - Retraction Distance : 5
+   - Retraction Speed : 60mm/s
    ### Speed
    - Print Speed : 40mm/s
        - Infill Speed : 40mm/s
@@ -80,12 +80,14 @@
            - Inner Wall Speed : 40mm/s
        - Top/Bottom Speed : 20m/s
        - Support Speed : 40mm/s
-           - Support Floor Speed : 10mm/s
+           - Support Infill Speed : 50mm/s
+           - Support Interface Speed : 26.6667mm/s
+               - Support Floor Speed : 10mm/s
    - Travel Speed : 60mm/s
    - Initial Layer Speed : 20.0mm/s
        - Initial Layer Print Speed : 10mm/s
-       - Initial Layer Travel Speed : 10mm/s
-   - Skirt/Brim Speed : 10mm/s
+       - Initial Layer Travel Speed : 40mm/s
+   - Skirt/Brim Speed : 20mm/s
    - Maximum Z Speed : 40mm/s
    - Enable Acceleration Control : no check
    - Enable Jerk Control : no check
@@ -104,7 +106,7 @@
       - Maximum Fan Speed : 100.0%
    - Regular/Maximum Speed Threshold : 10s
    - Initial Fan Speed : 0%
-   - Regular Fan Speed at Height : 0.25mm
+   - Regular Fan Speed at Height : 0.32mm
        - Regular Fan Speed at Layer : 2
    - Minimum Layer Time : 0
    - Minimum Speed : 10mm/s
@@ -112,7 +114,7 @@
    ### Support
    - Generate Support : check
    - Support Placement : Everywhere
-   - Support Overhang Angle : 55
+   - Support Overhang Angle : 50
    - Support Pattern : <a href="https://ultimaker.com/en/resources/20422-cura-support-settings">Triangles</a>
      <img src="https://ultimaker.com/photo/image/1300x0/5744447ebb127/Support-patterns.png">
    - Support Density : 15%

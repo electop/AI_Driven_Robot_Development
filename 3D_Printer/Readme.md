@@ -11,7 +11,7 @@
    ```
    ### Quality
    - Layer Height : 0.2mm
-   - initial Layer Height : 0.32mm
+   - initial Layer Height : 0.26mm
    - Line Width : 0.4mm
        - Wall Line Width : 0.4mm
            - Outer Wall Line Width : 0.4mm
@@ -20,26 +20,26 @@
        - Infill Line Width : 0.4mm
        - Initial Layer Line Width : 100%
    ### Shell
-   - Wall Thickness : 1.2mm
-       - Wall Line Count : 3
-   - Top/Bottom Thickness : 1.2mm
-       - Top Thickness : 1.2mm
-           - Top Layers : 6
-       - Bottom Thickness : 1.2mm
-           - Bottom Layers : 6
-   - Top/Bottom Pattern : Lines
+   - Wall Thickness : 0.8mm
+       - Wall Line Count : 2
+   - Top/Bottom Thickness : 0.8mm
+       - Top Thickness : 0.8mm
+           - Top Layers : 4
+       - Bottom Thickness : 0.8mm
+           - Bottom Layers : 4
+   - Top/Bottom Pattern : Concentric
        ```
        Lines, zig zag, concentric and 'line direction' with custom value [90]
        ```
        <img src="https://ultimaker.com/photo/image/1300x0/5a71dfed3bb56/TopBottomPattern.png">
-   - Optimize Wall Printing Order : no check
+   - Optimize Wall Printing Order : check
    - Fill Gaps Between Walls : Everywhere
        <img src="https://ultimaker.com/photo/image/1300x0/592c1cd715c45/Fill-gaps-between-walls.png">
    - Horizontal Expansion : 0mm
    - Enable Ironing : check
    ### Infill
-   - Infill Density : 16%
-       - Infill Line Distance : 7.5mm
+   - Infill Density : 15%
+       - Infill Line Distance : 8.0mm
    - Infill Pattern : <a href="https://ultimaker.com/en/resources/52670-infill">Cubic Subdivision</a>
      ```
      Grid: Strong 2D infill
@@ -62,43 +62,41 @@
    - Infill Layer Thickness : 0.2mm
    - Infill Before Walls : no check
    ### Material
-   - Printing Temperature : 190℃
-   - Printing Temperature Initial Layer : 190℃
-   - Initial Printing Temperature : 180℃
-   - Final Printing Temperature : 175℃
+   - Printing Temperature : 185℃
+   - Printing Temperature Initial Layer : 185℃
+   - Initial Printing Temperature : 175℃
+   - Final Printing Temperature : 170℃
    - Build Plate Temperature : 20℃
    - Build Plate Temperature Initial Layer : 20℃
    - Enable Retraction : check
    - Retract at Layer Change : check
-   - Retraction Distance : 5
-   - Retraction Speed : 60mm/s
+   - Retraction Distance : 10
+   - Retraction Speed : 100mm/s
    ### Speed
-   - Print Speed : 40mm/s
-       - Infill Speed : 40mm/s
-       - Wall Speed : 20.0mm/s
-           - Outer Wall Speed : 20mm/s
-           - Inner Wall Speed : 40mm/s
+   - Print Speed : 50mm/s
+       - Infill Speed : 30mm/s
+       - Wall Speed : 25.0mm/s
+           - Outer Wall Speed : 30mm/s
+           - Inner Wall Speed : 50mm/s
        - Top/Bottom Speed : 20m/s
        - Support Speed : 40mm/s
            - Support Infill Speed : 50mm/s
            - Support Interface Speed : 26.6667mm/s
-               - Support Floor Speed : 10mm/s
-   - Travel Speed : 60mm/s
-   - Initial Layer Speed : 20.0mm/s
-       - Initial Layer Print Speed : 10mm/s
-       - Initial Layer Travel Speed : 40mm/s
-   - Skirt/Brim Speed : 20mm/s
-   - Maximum Z Speed : 40mm/s
+               - Support Floor Speed : 30mm/s
+   - Travel Speed : 100mm/s
+   - Initial Layer Speed : 25.0mm/s
+       - Initial Layer Print Speed : 20mm/s
+       - Initial Layer Travel Speed : 30mm/s
+   - Skirt/Brim Speed : 30mm/s
+   - Maximum Z Speed : 100mm/s
    - Enable Acceleration Control : no check
    - Enable Jerk Control : no check
    ### Travel
-   - Combining Mode : Not in Skin
+   - Combining Mode : Off
    - Avoid Printed Parts When Traveling : check
-   - Avoid Supports When Traveling : check
-   - Travel Avoid Distance : 0.625mm
    - Z Hop When Retracted : check
    - Z Hop Only Over Printed Parts : no check
-   - Z Hop Height : 1mm
+   - Z Hop Height : 0.5mm
    ### Cooling
    - Enable Print Cooling : check
    - Fan Speed : 100.0%
@@ -125,8 +123,10 @@
        - Enable Support Roof : check
        - Enable Support Floor : check
    ### Build Plate Adhesion
-   - Build Plate Adhesion Type : Skirt
-   - Skirt Line Count : 6
+   - Build Plate Adhesion Type : Brim
+   - Brim Width : 6mm
+       - Brim Line Count : 15
+   - Brim Only on Outside : no check
    ### Dual Extrusion : No item
    ### Special Modes
    - Print Sequence : All at Once

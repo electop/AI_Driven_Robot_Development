@@ -33,8 +33,8 @@
        ```
        <img src="https://ultimaker.com/photo/image/1300x0/5a71dfed3bb56/TopBottomPattern.png">
    - Optimize Wall Printing Order : check
-   - Fill Gaps Between Walls : Everywhere
-       <img src="https://ultimaker.com/photo/image/1300x0/592c1cd715c45/Fill-gaps-between-walls.png" width="320" align="left">
+   - Fill Gaps Between Walls : Everywhere<br>
+       <img src="https://ultimaker.com/photo/image/1300x0/592c1cd715c45/Fill-gaps-between-walls.png" width="320" align="left"><br>
    - Horizontal Expansion : 0mm
    - Enable Ironing : check
    ### Infill
@@ -58,8 +58,8 @@
      ```
      <img src="https://ultimaker.com/photo/image/1300x0/5b33789c313a7/InfillPatterns.png" title="">
    - Infill Line Multiplier : 1
-   - Infill Overlap Percentage : 10%
-     <img src="https://ultimaker.com/photo/image/1300x0/5b3378e4b3201/Infill-overlap-NEW.png" width="320" align="left" title="">
+   - Infill Overlap Percentage : 10%<br>
+     <img src="https://ultimaker.com/photo/image/1300x0/5b3378e4b3201/Infill-overlap-NEW.png" width="320" align="left" title=""><br>
    - Infill Layer Thickness : 0.2mm
    - Infill Before Walls : no check
    ### Material

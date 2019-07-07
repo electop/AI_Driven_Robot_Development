@@ -59,7 +59,7 @@
      <img src="https://ultimaker.com/photo/image/1300x0/5b33789c313a7/InfillPatterns.png" title="">
    - Infill Line Multiplier : 1
    - Infill Overlap Percentage : 10%
-     <img src="https://ultimaker.com/photo/image/1300x0/5b3378e4b3201/Infill-overlap-NEW.png" width="320" title=""><br>
+         <img src="https://ultimaker.com/photo/image/1300x0/5b3378e4b3201/Infill-overlap-NEW.png" width="320" title=""><br>
    - Infill Layer Thickness : 0.2mm
    - Infill Before Walls : no check
    ### Material

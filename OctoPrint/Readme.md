@@ -26,7 +26,7 @@
    <img src="https://cdn.thingiverse.com/renders/e3/b2/47/75/33/fea04dd546a653231a598e4ac9940c03_preview_featured.jpg">
 # 4. Port Fowarding
  - Naver > Searching with the keyword like "ip주소확인" > Checking your private IP used at home<br>
- - ipTIME > 192.168.0.1 > Log-in > Advanced Setup > NAT/Routing > Port Forwarding > + Add new rule > Input "RUle Name" > Choice "Port Foward(User) > Input "Internal IP" such like 192.168.0.x > Choice "TCP" on the field of Protocol > Input "XXXX" on the left filed of External port > Input "XX" on the left field of Internal port > Click the "Modify" button 
+ - ipTIME > 192.168.0.1 > Log-in > Advanced Setup > NAT/Routing > Port Forwarding > + Add new rule > Input "Rule Name" > Choice "Port Foward(User) > Input "Internal IP" such like 192.168.0.x > Choice "TCP" on the field of Protocol > Input "XXXX" on the left filed of External port > Input "XX" on the left field of Internal port > Click the "Modify" button 
 # 5. Blogs
  - <a href="https://cosmosjs.blog.me/221516473588">라즈베리파이와 OctoPrint를 이용한 3D 프린터 원격제어</a>
  - <a href="https://seoulworkshop.blog.me/221265052717">공유기 포트포워딩 설정하기</a>

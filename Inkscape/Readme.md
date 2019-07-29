@@ -13,5 +13,5 @@
 ### How to install extensions
 ```
   Inkscape 0.92.4 (29 July 2019)
-  Create an extensions folder at ~/snap/inkscape/4693/ and paste the extensions here and restart Inkscape.
+  Create an extensions folder at /usr/share/inkscape/extensions and paste the extensions here and restart Inkscape.
 ```

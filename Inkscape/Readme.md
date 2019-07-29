@@ -19,5 +19,5 @@
 ```
   Error message : Failed to load module "canberra-gtk-module"
   sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
-  <a href="https://askubuntu.com/questions/342202/failed-to-load-module-canberra-gtk-module-but-already-installed">askubuntu.com</a>
 ```
+  <a href="https://askubuntu.com/questions/342202/failed-to-load-module-canberra-gtk-module-but-already-installed">askubuntu.com</a>

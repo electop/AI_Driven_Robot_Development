@@ -31,6 +31,5 @@
 <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/screen_capture_cartoonized_mask_2019-09-01%2010:24:24.272818.jpg"><br>
 <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/screen_capture_cartoonized_2019-09-01%2010:24:24.272818.jpg"><br>
   #### e.g.3
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/screen_capture.jpg"><br>
 <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-02%2008-02-05.png"><br>
 <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-02%2008-01-49.png"><br>

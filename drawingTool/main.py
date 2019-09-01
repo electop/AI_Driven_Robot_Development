@@ -21,7 +21,7 @@ def grayscale(rgb):
 
 # Using OpenCV Capture Image and make it pencil drawing effect
 def imageCapture():
-    img_name='s.jpg'
+    img_name='./images/s.jpg'
     key = cv2. waitKey(1)
     cap = cv2.VideoCapture(0)
     while True:

@@ -27,7 +27,7 @@ def cartoonizer():
     num_bilateral = 7  # number of bilateral filtering steps
     
     img_rgb = cv2.imread("./images/screen_capture.jpg")
-
+ 
     # downsample image using Gaussian pyramid
     img_color = img_rgb
     for _ in range(num_down):
@@ -56,27 +56,34 @@ def cartoonizer():
                                     cv2.THRESH_BINARY,
                                     blockSize=9,
                                     C=2)
-    ret, mask = cv2.threshold(img_edge, 10, 255, cv2.THRESH_BINARY)
+
+    img_median = cv2.medianBlur(img_edge, 5)
+    edge_compare = np.concatenate((img_edge, img_median), axis=1)
+    cv2.imshow("edge_compare", edge_compare)
+    ret, mask = cv2.threshold(img_median, 10, 255, cv2.THRESH_BINARY)
     mask_inv = cv2.bitwise_not(mask)
 
     # convert back to color, bit-AND with color image
-    img_edge = cv2.cvtColor(img_edge, cv2.COLOR_GRAY2RGB)
+    img_edge = cv2.cvtColor(img_median, cv2.COLOR_GRAY2RGB)
     #img_cartoon = cv2.bitwise_and(img_color, img_edge)
 
     img_cartoon_bg = cv2.bitwise_and(roi, roi, mask = mask)
     img_cartoon_fg = cv2.bitwise_and(img_edge, img_edge, mask = mask_inv)
     dst = cv2.add(img_cartoon_fg, img_cartoon_bg)
-    img_rgb[0:rows, 0:cols] = dst
+    img_color[0:rows, 0:cols] = dst
 
     # display
-    #cv2.imshow("original", img_original)
+    #cv2.imshow("original", img_rgb)
     #cv2.imshow("edge", img_edge)
     #cv2.imshow("mask_inv", mask_inv)
     #cv2.imshow("color", img_color)
-    cv2.imshow("mask", mask)
-    cv2.imshow("cartoon", img_rgb)
+    #cv2.imshow("mask", mask)
+    #cv2.imshow("cartoon", img_rgb)
+    result_compare = np.concatenate((img_rgb, img_color), axis=1)
+    cv2.imshow("result_compare", result_compare)
     cv2.waitKey(0)
     now = datetime.datetime.now()
+    cv2.imwrite("./images/screen_capture_cartoonized_mask_%s.jpg" % now, mask)
     cv2.imwrite("./images/screen_capture_cartoonized_%s.jpg" % now, img_rgb)
     cv2.destroyAllWindows()
 

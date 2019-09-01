@@ -11,7 +11,7 @@
     3. User can define the thickness of the line. Of course, it will be also implemented to be able to draw with G-codes, considering the thickness.
 
  ## Figures
-    <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/Screenshot%20from%202019-08-27%2003-17-05.png"><br>
+<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/Screenshot%20from%202019-08-27%2003-17-05.png"><br>
 
 ### Cartoonizer
   ## History
@@ -22,6 +22,6 @@
     1. User can get cartoon image from web cam device.
 
  ## Figures
-    <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/img_example.jpg"><br>
-    <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/Screenshot%20from%202019-09-01%2009-03-38.png"><br>
-    <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/Screenshot%20from%202019-09-01%2009-03-29.png"><br>
+<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/img_example.jpg"><br>
+<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/Screenshot%20from%202019-09-01%2009-03-38.png"><br>
+<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/Screenshot%20from%202019-09-01%2009-03-29.png"><br>

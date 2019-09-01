@@ -2,7 +2,7 @@ import cv2
 import datetime
 import numpy as np
 
-def cam():
+def cam(now):
     cap = cv2.VideoCapture(0)
 
     while(True):
@@ -15,18 +15,18 @@ def cam():
         # Display the resulting frame
         cv2.imshow('frame',gray)
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            cv2.imwrite("./images/screen_capture.jpg", frame)
+            cv2.imwrite("./images/screen_capture_%s.jpg" % now, frame)
             break
 
     # When everything done, release the capture
     cap.release()
     cv2.destroyAllWindows()
 
-def cartoonizer():
+def cartoonizer(now):
     num_down = 2       # number of downsampling steps
     num_bilateral = 7  # number of bilateral filtering steps
     
-    img_rgb = cv2.imread("./images/screen_capture.jpg")
+    img_rgb = cv2.imread("./images/screen_capture_%s.jpg" % now)
  
     # downsample image using Gaussian pyramid
     img_color = img_rgb
@@ -82,10 +82,11 @@ def cartoonizer():
     result_compare = np.concatenate((img_rgb, img_color), axis=1)
     cv2.imshow("result_compare", result_compare)
     cv2.waitKey(0)
-    now = datetime.datetime.now()
+
     cv2.imwrite("./images/screen_capture_cartoonized_mask_%s.jpg" % now, mask)
     cv2.imwrite("./images/screen_capture_cartoonized_%s.jpg" % now, img_rgb)
     cv2.destroyAllWindows()
 
-cam()
-cartoonizer()
+now = str(datetime.datetime.now())[:-7]
+cam(now)
+cartoonizer(now)

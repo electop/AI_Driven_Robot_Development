@@ -22,6 +22,6 @@
     1. User can get cartoon image from web cam device.
 
   ### Figures
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/img_example.jpg", width="480"><br>
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/Screenshot%20from%202019-09-01%2009-03-38.png", width="480"><br>
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/Screenshot%20from%202019-09-01%2009-03-29.png", width="480"><br>
+<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/img_example.jpg" width="480"><br>
+<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/Screenshot%20from%202019-09-01%2009-03-38.png" width="480"><br>
+<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/Screenshot%20from%202019-09-01%2009-03-29.png" width="480"><br>

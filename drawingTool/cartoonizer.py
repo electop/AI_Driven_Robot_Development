@@ -15,7 +15,7 @@ def cam():
         # Display the resulting frame
         cv2.imshow('frame',gray)
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            cv2.imwrite("screen_capture.jpg", frame)
+            cv2.imwrite("./images/screen_capture.jpg", frame)
             break
 
     # When everything done, release the capture

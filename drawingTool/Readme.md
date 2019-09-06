@@ -3,7 +3,8 @@
     DrawigTool
     1. v0.001 : 2019-08-23 12:35 by Bongchae Kim
     2. v0.002 : 2019-08-25 11:45 by Bongchae Kim
-    3. v0.003 : On going
+    3. v0.003 : 2019-09-06 11:34 by Bongchae Kim
+    4. v0.004 : On going
 
   ### User scenarios
     1. User can import an image file. It's necessary to draw picture as a sketch.

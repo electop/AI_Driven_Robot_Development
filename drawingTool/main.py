@@ -4,58 +4,110 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 import cv2
 import numpy as np
+import datetime
 
+strFilename1 = "./images/screen_capture_cartoonized_mask_.jpg"
+strFilename2 = "./images/screen_capture_cartoonized_.jpg"
  
 QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
-    # Capture Image using OpenCV
-    # make gray and pencil effect
-def dodge(front,back):
-    result=front*255/(255-back) 
-    result[result>255]=255
-    result[back==255]=255
-    return result.astype('uint8')
 
-def grayscale(rgb):
-#    return np.dot(rgb[...,:3], [0.299, 0.587, 0.114])
-    return np.dot(rgb[...,:3], [0.333, 0.333, 0.333])
 
-# Using OpenCV Capture Image and make it pencil drawing effect
-def imageCapture():
-    img_name='./images/s.jpg'
-    key = cv2. waitKey(1)
+# import capture function
+def cam(now):
     cap = cv2.VideoCapture(0)
-    while True:
 
-        # Take each frame
-        rep, frame = cap.read()
-        cv2.imshow("Capturing", frame)
-        key = cv2.waitKey(1)
-        if key == ord('s'):
-            cv2.imwrite(filename=img_name, img=frame)
-            print("captured image is save as s.jpg")
-            cap.release()
-            break
-        elif key== ord('q'):
-            print("Turning off camera.")
-            cap.release()
-            print("Camera off.")
-            print("Program ended.")
-            cv2.destroyAllWindows()
+    while(True):
+        # Capture frame-by-frame
+        ret, frame = cap.read()
+
+        # Our operations on the frame come here
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+        # Display the resulting frame
+        cv2.imshow('frame',gray)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            cv2.imwrite("./images/screen_capture_%s.jpg" % now, frame)
             break
 
-    #open Captured Image and make it like pencil drawing
-    s=cv2.imread(img_name)
-    grayImage = grayscale(s)
-    invertedImage = 255-grayImage
-    import scipy.ndimage
-    gFiltered = scipy.ndimage.filters.gaussian_filter(invertedImage,sigma=30)
-    pencilImage = dodge(gFiltered,grayImage)
-
-    # Save as s.jpg
-    cv2.imshow('draw',pencilImage)
-    cv2.imwrite(filename=img_name, img=pencilImage)
-    cv2.waitKey(0)
+    # When everything done, release the capture
+    cap.release()
     cv2.destroyAllWindows()
+
+def cartoonizer(now):
+    num_down = 2       # number of downsampling steps
+    num_bilateral = 7  # number of bilateral filtering steps
+    
+    img_rgb = cv2.imread("./images/screen_capture_%s.jpg" % now)
+ 
+    # downsample image using Gaussian pyramid
+    img_color = img_rgb
+    for _ in range(num_down):
+        img_color = cv2.pyrDown(img_color)
+    
+    # repeatedly apply small bilateral filter instead of
+    # applying one large filter
+    for _ in range(num_bilateral):
+        img_color = cv2.bilateralFilter(img_color, d=9,
+                                        sigmaColor=9,
+                                        sigmaSpace=7)
+    
+    # upsample image to original size
+    for _ in range(num_down):
+        img_color = cv2.pyrUp(img_color)
+
+    # convert to grayscale and apply median blur
+    img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2GRAY)
+    img_blur = cv2.medianBlur(img_gray, 7)
+    rows, cols, channels = img_rgb.shape
+    roi = img_color[0:rows, 0:cols]
+
+    # detect and enhance edges
+    img_edge = cv2.adaptiveThreshold(img_blur, 255,
+                                    cv2.ADAPTIVE_THRESH_MEAN_C,
+                                    cv2.THRESH_BINARY,
+                                    blockSize=9,
+                                    C=2)
+
+    img_median = cv2.medianBlur(img_edge, 5)
+    edge_compare = np.concatenate((img_edge, img_median), axis=1)
+    cv2.imshow("edge_compare", edge_compare)
+    ret, mask = cv2.threshold(img_median, 10, 255, cv2.THRESH_BINARY)
+    mask_inv = cv2.bitwise_not(mask)
+
+    # convert back to color, bit-AND with color image
+    img_edge = cv2.cvtColor(img_median, cv2.COLOR_GRAY2RGB)
+    #img_cartoon = cv2.bitwise_and(img_color, img_edge)
+
+    img_cartoon_bg = cv2.bitwise_and(roi, roi, mask = mask)
+    img_cartoon_fg = cv2.bitwise_and(img_edge, img_edge, mask = mask_inv)
+    dst = cv2.add(img_cartoon_fg, img_cartoon_bg)
+    img_color[0:rows, 0:cols] = dst
+
+    # display
+    #cv2.imshow("original", img_rgb)
+    #cv2.imshow("edge", img_edge)
+    #cv2.imshow("mask_inv", mask_inv)
+    #cv2.imshow("color", img_color)
+    #cv2.imshow("mask", mask)
+    #cv2.imshow("cartoon", img_rgb)
+    result_compare = np.concatenate((img_rgb, img_color), axis=1)
+    cv2.imshow("result_compare", result_compare)
+    cv2.waitKey(0)
+
+    strFilename1 = "./images/screen_capture_cartoonized_mask_" + now + ".jpg"
+    strFilename2 = "./images/screen_capture_cartoonized_" + now + ".jpg"
+
+    #cv2.imwrite("./images/screen_capture_cartoonized_mask_%s.jpg" % now, mask)
+    #cv2.imwrite("./images/screen_capture_cartoonized_%s.jpg" % now, img_rgb)
+    cv2.imwrite("a.jpg", mask)
+    cv2.imwrite(strFilename2, img_rgb)
+    cv2.destroyAllWindows()
+
+
+def imageCapturenCartoonizer():
+    now = str(datetime.datetime.now())[:-7]
+    cam(now)
+    cartoonizer(now)
 
 # Modify pixcel point to real mili meter point
 def convertPixelX2mm(i):
@@ -133,22 +185,6 @@ class CWidget(QWidget):
          
  
         # 그룹박스3
-        gb = QGroupBox('붓 설정')        
-        left.addWidget(gb)
- 
-        hbox = QHBoxLayout()
-        gb.setLayout(hbox)
- 
-        label = QLabel('붓색상')
-        hbox.addWidget(label)                
- 
-        self.brushcolor = QColor(255,255,255)
-        self.brushbtn = QPushButton()        
-        self.brushbtn.setStyleSheet('background-color: rgb(255,255,255)')
-        self.brushbtn.clicked.connect(self.showColorDlg)
-        hbox.addWidget(self.brushbtn)
- 
-        # 그룹박스4
         gb = QGroupBox('지우개')        
         left.addWidget(gb)
  
@@ -159,15 +195,16 @@ class CWidget(QWidget):
         self.checkbox.stateChanged.connect(self.checkClicked)
         hbox.addWidget(self.checkbox)
  
-        # 그룹박스5
+        # 그룹박스4
         gb = QGroupBox('CAPTURE')        
         left.addWidget(gb)
 
         hbox = QHBoxLayout()
         gb.setLayout(hbox)
  
-        self.capturebtn = QPushButton()        
-        self.capturebtn.setStyleSheet('background-color: rgb(255,255,255)')
+        self.capturebtn = QPushButton()
+        self.capturebtn.setIcon(QIcon(QPixmap("cam.png")))        
+        #self.capturebtn.setStyleSheet('background-color: rgb(255,255,255)')
         self.capturebtn.clicked.connect(self.captureImageDlg)
         hbox.addWidget(self.capturebtn)
        
@@ -199,9 +236,13 @@ class CWidget(QWidget):
 
 
     def captureImageDlg(self):
-        imageCapture()
-        # Need to Open captured image on the right scene
-        # code TBD
+    
+        imageCapturenCartoonizer()
+
+        # Capture image as a.jpg and reload on the right view              
+        pic = QPixmap("a.jpg") 
+        self.view.scene.addItem(QGraphicsPixmapItem(pic))  
+
         pass
              
     def showColorDlg(self):       
@@ -241,7 +282,8 @@ class CView(QGraphicsView):
         self.end = QPointF()
  
         self.setRenderHint(QPainter.HighQualityAntialiasing)
-        
+
+        # Start Writing GCode        
         self.f = open("faceGcode.gcode","w")
         self.f.write("M05 S10\n")
         self.f.write("G90\n")

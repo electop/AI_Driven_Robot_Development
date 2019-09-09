@@ -5,14 +5,61 @@ from PyQt5.QtWidgets import *
 import cv2
 import numpy as np
 import datetime
+import serial
+import time
 
+#global variable for file name (does not work)
 strFilename1 = "./images/screen_capture_cartoonized_mask_.jpg"
 strFilename2 = "./images/screen_capture_cartoonized_.jpg"
  
 QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
 
+# gcode sender function
+# open serial port and write each gcode (and get return)
+# need to install phtyon pySerial
+def simpleGcodesender():
+    s = serial.Serial("/dev/ttyUSB1",115200)
+    #/dev/ttyUSB0
+    print("Opening Serial Port")
+    f = open("faceGcode.gcode","r")
+    # Wake up 
+    s.write(str.encode("\r\n\r\n")) # Hit enter a few times to wake the Printrbot
+    time.sleep(2)   # Wait for Printrbot to initialize
+    s.flushInput()  # Flush startup text in serial input
+    print("Sending gcode")
+
+    for line in f:
+        l = removeComment(line)
+        l = l.strip() # Strip all EOL characters for streaming
+        if (l.isspace()==False and len(l)>0):
+            #print("Sending: " + l)
+            #s.write(l + "\n") # Send g-code block
+            s.write(str.encode(l + "\n"))
+            grbl_out = s.readline() # Wait for response with carriage return
+            #print(" : " + grbl_out.strip())
+ 
+    # Wait here until printing is finished to close serial port and file.
+    #raw_input("  Press <Enter> to exit.")
+    # Close file and serial port
+    f.close()
+    s.close()
+    print("Drawing is over")
+
+    
+
+
+#gcode comment remover
+#Eliminate gocde comment
+def removeComment(string):
+    if (string.find(';')==-1):
+        return string
+    else:
+        return string[:string.index(';')]
+
+
 
 # import capture function
+# Function for Camera Ready
 def cam(now):
     cap = cv2.VideoCapture(0)
 
@@ -33,6 +80,10 @@ def cam(now):
     cap.release()
     cv2.destroyAllWindows()
 
+# Function for cartoonizing
+# based on image processing
+# make it as 1 color drawing
+# save jpg file in the ./images/ folder
 def cartoonizer(now):
     num_down = 2       # number of downsampling steps
     num_bilateral = 7  # number of bilateral filtering steps
@@ -110,20 +161,20 @@ def imageCapturenCartoonizer():
     cartoonizer(now)
 
 # Modify pixcel point to real mili meter point
+# make it actual length for X and Y
 def convertPixelX2mm(i):
     return i * 210 / 680
-
 
 def convertPixelY2mm(i):
     return i * 148 / 480
 
-
-
 # Modify drawing bot coordinate point
+# absolute coordinate is - Y area
 def convertRealY(y):
     return 0-y
 
-
+# UI design using QWidget
+#
 class CWidget(QWidget): 
  
     def __init__(self):
@@ -182,9 +233,24 @@ class CWidget(QWidget):
         self.penbtn.setStyleSheet('background-color: rgb(0,0,0)')
         self.penbtn.clicked.connect(self.showColorDlg)
         grid.addWidget(self.penbtn,1, 1)
-         
- 
+
         # 그룹박스3
+        gb = QGroupBox('붓 설정')        
+        left.addWidget(gb)
+ 
+        hbox = QHBoxLayout()
+        gb.setLayout(hbox)
+ 
+        label = QLabel('붓색상')
+        hbox.addWidget(label)                
+ 
+        self.brushcolor = QColor(255,255,255)
+        self.brushbtn = QPushButton()        
+        self.brushbtn.setStyleSheet('background-color: rgb(255,255,255)')
+        self.brushbtn.clicked.connect(self.showColorDlg)
+        hbox.addWidget(self.brushbtn)
+ 
+        # 그룹박스4
         gb = QGroupBox('지우개')        
         left.addWidget(gb)
  
@@ -195,7 +261,7 @@ class CWidget(QWidget):
         self.checkbox.stateChanged.connect(self.checkClicked)
         hbox.addWidget(self.checkbox)
  
-        # 그룹박스4
+        # 그룹박스5
         gb = QGroupBox('CAPTURE')        
         left.addWidget(gb)
 
@@ -208,6 +274,17 @@ class CWidget(QWidget):
         self.capturebtn.clicked.connect(self.captureImageDlg)
         hbox.addWidget(self.capturebtn)
        
+        # 그룹박스6
+        gb = QGroupBox('DRAW')        
+        left.addWidget(gb)
+
+        hbox = QHBoxLayout()
+        gb.setLayout(hbox)
+ 
+        self.drawbtn = QPushButton()
+        self.drawbtn.setIcon(QIcon(QPixmap("pen.png")))        
+        self.drawbtn.clicked.connect(self.drawStartDlg)
+        hbox.addWidget(self.drawbtn)
 
         left.addStretch(1)        
           
@@ -244,6 +321,15 @@ class CWidget(QWidget):
         self.view.scene.addItem(QGraphicsPixmapItem(pic))  
 
         pass
+
+    # no need dialogbox but start to drawing
+    def drawStartDlg(self):
+        str="M05 S10\nG01 F10000\nG01 X0 Y0"
+        self.view.f.write(str)
+        self.view.f.close()
+        print("file closed")
+        simpleGcodesender()
+        pass
              
     def showColorDlg(self):       
          
@@ -260,10 +346,9 @@ class CWidget(QWidget):
             self.brushcolor = color
             self.brushbtn.setStyleSheet('background-color: {}'.format( color.name()))
  
-
- 
-         
+        
 # QGraphicsView display QGraphicsScene
+#
 class CView(QGraphicsView):
     
     def __init__(self, parent):
@@ -285,6 +370,7 @@ class CView(QGraphicsView):
 
         # Start Writing GCode        
         self.f = open("faceGcode.gcode","w")
+        self.f.write("G10 P0 L20 X0 Y0 Z0\n")
         self.f.write("M05 S10\n")
         self.f.write("G90\n")
         self.f.write("G21\n")
@@ -434,8 +520,8 @@ class CView(QGraphicsView):
                 str="M05 S10\nG01 F10000\nG01 X%4.3f Y%4.3f\nM03 S60\n" %(convertPixelX2mm(self.start.x()), convertRealY(convertPixelY2mm(self.start.y() + (self.end.y() - self.start.y())/2 )))
                 self.f.write(str)
                 
-                print("start x %d y %d\n" %(self.start.x(), self.start.y()))
-                print("start x %d y %d\n" %(self.end.x(), self.end.y()))
+                #print("start x %d y %d\n" %(self.start.x(), self.start.y()))
+                #print("start x %d y %d\n" %(self.end.x(), self.end.y()))
 
                 #print("G02 X%4.3f Y%4.3f\n" %(convertPixelX2mm(self.start.x()),convertRealY(convertPixelY2mm(self.start.y()))
                 #print("G02 X%4.3f Y%4.3f\n" %(convertPixelX2mm(self.end.x()), convertRealY(convertPixelY2mm(self.end.y())))
@@ -444,6 +530,8 @@ class CView(QGraphicsView):
                 str="G02 F300 X%4.3f Y%4.3f I%4.3f\n" %(convertPixelX2mm(self.start.x()), convertRealY(convertPixelY2mm(self.start.y() + (self.end.y() - self.start.y())/2)), convertPixelX2mm((self.end.x()-self.start.x())/2))
                 self.f.write(str)
 
+        # When sending g code to drawing bot file is already closed. So this command cause error
+        # need to flag when drawing bot is operated
         self.f.write("M05 S10\n")
  
  

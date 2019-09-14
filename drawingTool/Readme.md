@@ -13,7 +13,7 @@
     3. User can define the thickness of the line. Of course, it will be also implemented to be able to draw with G-codes, considering the thickness.
 
   ### Figures
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screen    3. v0.003 : 2019-09-06 11:34 by Bongchae Kimshot%20from%202019-08-27%2003-17-05.png"><br>
+<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-08-27%2003-17-05.png?raw=true"><br>
 
 ## Cartoonizer
   ### History

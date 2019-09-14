@@ -47,8 +47,9 @@
 ## Drawing Bot Desk desing
   ### History
     1. V.0.001 : 2019-09-12 I added laser cutting design for desk.
+    
   ### Figures
-  #### Design Image
+  #### Design Images
   ##### ▶ Top
   <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/plate_top-20190911.png?raw=true"><br>
   ##### ▶ Back

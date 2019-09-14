@@ -41,7 +41,7 @@
   #### e.g.3
   ##### ▶ Edge mask + Median blur
   <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-02%2008-02-05.png"><br>
-  ##### ▶ Gaussian pyramid + Edge mask vs Gaussian pyramid + Edge mask + Median blur
+  ##### ▶ Source (vs) Gaussian pyramid + Edge mask + Median blur
   <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-02%2008-01-49.png"><br>
 
 ## Drawing Bot Desk desing

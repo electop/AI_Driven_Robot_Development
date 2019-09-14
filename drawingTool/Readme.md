@@ -25,21 +25,28 @@
 
   ### Figures
   #### e.g.1
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/img_example.jpg"><br>
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-01%2009-03-38.png"><br>
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-01%2009-03-29.png"><br>
+  ##### Source
+  <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/img_example.jpg"><br>
+  ##### Edge mask
+  <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-01%2009-03-38.png"><br>
+  ##### Gaussian pyramid + Edge mask
+  <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-01%2009-03-29.png"><br>
   #### e.g.2
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/screen_capture.jpg"><br>
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/screen_capture_cartoonized_mask_2019-09-01%2010:24:24.272818.jpg"><br>
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/screen_capture_cartoonized_2019-09-01%2010:24:24.272818.jpg"><br>
+  ##### Source
+  <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/screen_capture.jpg"><br>
+  ##### Edge mask
+  <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/screen_capture_cartoonized_mask_2019-09-01%2010:24:24.272818.jpg"><br>
+  ##### Gaussian pyramid + Edge mask
+  <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/screen_capture_cartoonized_2019-09-01%2010:24:24.272818.jpg"><br>
   #### e.g.3
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-02%2008-02-05.png"><br>
-<img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-02%2008-01-49.png"><br>
+  ##### Edge mask + Median blur
+  <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-02%2008-02-05.png"><br>
+  ##### Gaussian pyramid + Edge mask vs Gaussian pyramid + Edge mask + Median blur
+  <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-02%2008-01-49.png"><br>
 
 ## Drawing Bot Desk desing
   ### History
     1. V.0.001 : 2019-09-12 I added laser cutting design for desk.
-  
   ### Design Image
   #### Top
   <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/plate_top-20190911.png?raw=true"><br>

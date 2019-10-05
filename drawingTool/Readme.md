@@ -44,7 +44,7 @@
   ##### ▶ Source (vs) Gaussian pyramid + Edge mask + Median blur
   <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/Screenshot%20from%202019-09-02%2008-01-49.png"><br>
 
-## Drawing Bot Desk desing
+## Drawing Bot Desk design
   ### History
     1. V.0.001 : 2019-09-12 I added laser cutting design for desk.
     
@@ -58,3 +58,18 @@
   <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/plate_front-20190911.png?raw=true"><br>
   ##### ▶ Right
   <img src="https://github.com/electop/AI_Driven_Robot_Development/blob/master/drawingTool/images/plate_right-20190911.png?raw=true"><br>
+
+## SW Update Requirement
+  ### History
+    1. V.0.002 : 2019-10-05 List for requirements
+  #### 수정 필요 리스트
+    1. Drawing Bot Serial Port 찾아서 붙이는 기능 (현재는 하드 코딩 되어 있음)
+    2. Gcode 파일 별도 생성 필요 프로그램 오픈하면서 gcode 파일을 생성하게 되어 있고 여기에 바로 작성
+    3. 당장은 바꾸지 않아도 되나 곡선을 그리면 펜이 내려온 상태에서 얻어지는 점 숫자가 너무 많아짐
+       이를 근사화해서 곡선으로 (현재는 점에서 점으로 직선 형태) 변화하는 방법이 필요 (CAD 기술인데 잘 안찾아짐)
+    4. 사진 찍었을 때 그림으로 만드는 파라메터 최적화
+    5. 잘못그린 것 되돌리는 기능 (이건 복잡한게 지금 gcode에 바로 작성하게 되어 있어 이것도 돌려야 함)
+    6. 기본 배경 gcode 확보 (간단하면서도 미적 감각이 있는 배경... 샹제리제 거리 또는 메이커 페어 관련)
+    7. 혹시 웹캠을 쓸 경우 여러개의 카메라에서 웹캠을 찾아 선택하는 기
+   
+  

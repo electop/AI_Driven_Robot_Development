@@ -371,6 +371,7 @@ class CView(QGraphicsView):
         # Start Writing GCode        
         self.f = open("faceGcode.gcode","w")
         self.f.write("G10 P0 L20 X0 Y0 Z0\n")
+        self.f.write("M03 S030\n")
         self.f.write("M05 S10\n")
         self.f.write("G90\n")
         self.f.write("G21\n")

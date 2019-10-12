@@ -528,7 +528,7 @@ class CView(QGraphicsView):
                 #print("G02 X%4.3f Y%4.3f\n" %(convertPixelX2mm(self.end.x()), convertRealY(convertPixelY2mm(self.end.y())))
 
                 # Add circle piont 
-                str="G02 F300 X%4.3f Y%4.3f I%4.3f\n" %(convertPixelX2mm(self.start.x()), convertRealY(convertPixelY2mm(self.start.y() + (self.end.y() - self.start.y())/2)), convertPixelX2mm((self.end.x()-self.start.x())/2))
+                str="G02 F1000 X%4.3f Y%4.3f I%4.3f\n" %(convertPixelX2mm(self.start.x()), convertRealY(convertPixelY2mm(self.start.y() + (self.end.y() - self.start.y())/2)), convertPixelX2mm((self.end.x()-self.start.x())/2))
                 self.f.write(str)
 
         # When sending g code to drawing bot file is already closed. So this command cause error
